@@ -1,4 +1,9 @@
+import 'package:eduarsip/screens/loginScreen.dart';
+
+import './providers/User.dart';
+import './screens/splashScreen.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 
 void main() {
   runApp(MyApp());
@@ -9,20 +14,23 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: LoginPage(),
-    );
-  }
-}
-
-class LoginPage extends StatelessWidget {
-  // const LoginPage({ Key? key }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text("EduArsip App"),
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (context) => User()),
+      ],
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        title: 'EduArsip',
+        theme: ThemeData(
+          primarySwatch: Colors.blue,
+          primaryColor: Colors.blue,
+          accentColor: Colors.white,
+          fontFamily: 'Poppins',
+        ),
+        home: SplashScreen(),
+        routes: {
+          LoginScreen.routeName: (context) => LoginScreen(),
+        },
       ),
     );
   }
