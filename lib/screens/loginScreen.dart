@@ -1,3 +1,4 @@
+import 'package:eduarsip/screens/slideDrawer.dart';
 import 'package:eduarsip/widgets/loginScreen/loginButton.dart';
 
 import '../widgets/loginScreen/textFieldLogin.dart';
@@ -13,6 +14,22 @@ class LoginScreen extends StatefulWidget {
 
 class _LoginScreenState extends State<LoginScreen> {
   bool isChecked = false;
+
+  _cekLogin() async {
+    // setState(() {
+    // visible = true;
+    // });
+    int statusCode = 200;
+    try {
+      if (statusCode == 200) {
+        // setState(() {
+        //   visible = false;
+        // });
+
+        Navigator.of(context).pushReplacementNamed(SlideDrawer.routeName);
+      }
+    } catch (e) {}
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -45,7 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Container(
                           // color: Colors.amber,
                           width: mediaQueryWidth,
-                          height: bodyHeight * 0.23,
+                          height: bodyHeight * 0.17,
                           // padding: EdgeInsets.symmetric(horizontal: 30),
                           child: Image.asset(
                             "assets/images/only_logo_eduarsip_transparant.png",
@@ -64,7 +81,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   //   ),
                   // ),
                   SizedBox(
-                    height: bodyHeight * 0.1,
+                    height: bodyHeight * 0.12,
                   ),
                   Container(
                     height: bodyHeight * 0.13,
@@ -123,7 +140,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   InkWell(
                     child: LoginButton(bodyHeight: bodyHeight),
-                    // onTap: _cekLogin,
+                    onTap: _cekLogin,
                   ),
                   Container(
                     // color: Colors.amber.shade200,

@@ -1,4 +1,5 @@
 import 'package:eduarsip/screens/loginScreen.dart';
+import 'package:eduarsip/screens/slideDrawer.dart';
 
 import './providers/User.dart';
 import './screens/splashScreen.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         title: 'EduArsip',
         theme: ThemeData(
-          primarySwatch: Colors.blue,
+          // primarySwatch: Colors.blue,
           primaryColor: Colors.blue,
           accentColor: Colors.white,
           fontFamily: 'Poppins',
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
         home: SplashScreen(),
         routes: {
           LoginScreen.routeName: (context) => LoginScreen(),
+          SlideDrawer.routeName: (context) => SlideDrawer(),
         },
       ),
     );

@@ -23,6 +23,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  salomon_bottom_bar: ^3.2.0
+  flutter_slide_drawer: ^1.0.0
   provider: ^5.0.0
 
 
@@ -48,6 +50,9 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/images/only_logo_eduarsip_transparant.png
+    - assets/images/bg_drawer.jpg
+    - assets/images/default_user.png
+    - assets/images/logo_transparant_resize.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
