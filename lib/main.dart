@@ -1,5 +1,6 @@
-import 'package:eduarsip/screens/loginScreen.dart';
-import 'package:eduarsip/screens/slideDrawer.dart';
+import './providers/BodyHeight.dart';
+import './screens/loginScreen.dart';
+import './screens/slideDrawer.dart';
 
 import './providers/User.dart';
 import './screens/splashScreen.dart';

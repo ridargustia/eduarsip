@@ -1,3 +1,6 @@
+import '../providers/BodyHeight.dart';
+import 'package:provider/provider.dart';
+
 import './dashboardScreen.dart';
 import './homeScreen.dart';
 import './profileScreen.dart';
@@ -28,11 +31,38 @@ class _SlideDrawerState extends State<SlideDrawer> {
 
   @override
   Widget build(BuildContext context) {
+    //APPBAR
+    final myAppBar = AppBar(
+      backgroundColor: Colors.white,
+      leading: GestureDetector(
+        onTap: () {
+          drawerKey.currentState!.toggleDrawer();
+        },
+        child: Icon(
+          Icons.menu,
+          color: Colors.black,
+        ),
+      ),
+      title: Image.asset(
+        "assets/images/logo_transparant_resize.png",
+        width: 120,
+      ),
+      centerTitle: true,
+    );
+
+    //SIZE SCREENS
+    final mediaQueryHeight = MediaQuery.of(context).size.height;
+    final paddingTop = MediaQuery.of(context).padding.top;
+    final bodyHeight =
+        mediaQueryHeight - myAppBar.preferredSize.height - paddingTop;
+
+    //PAGE IN NAVIGATION BAR
     List<Widget> _container = [
       HomeScreen(),
       DashboardScreen(),
       ProfileScreen(),
     ];
+
     return SliderDrawerWidget(
       key: drawerKey,
       option: SliderDrawerOption(
@@ -43,56 +73,43 @@ class _SlideDrawerState extends State<SlideDrawer> {
         radiusAmount: 50,
       ),
       drawer: CustomDrawer(),
-      body: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.white,
-          leading: GestureDetector(
-            onTap: () {
-              drawerKey.currentState!.toggleDrawer();
-            },
-            child: Icon(
-              Icons.menu,
-              color: Colors.black,
-            ),
-          ),
-          title: Image.asset(
-            "assets/images/logo_transparant_resize.png",
-            width: 120,
-          ),
-          centerTitle: true,
-        ),
-        body: _container.elementAt(_currentIndex),
-        bottomNavigationBar: SalomonBottomBar(
-          currentIndex: _currentIndex,
-          onTap: (i) => setState(() {
-            _currentIndex = i;
-            _onItemTapped(_currentIndex);
-            // print(_currentIndex);
-          }),
-          // selectedItemColor: Colors.amber,
-          unselectedItemColor: Colors.blue,
-          items: [
-            /// Home
-            SalomonBottomBarItem(
-              icon: Icon(Icons.home),
-              title: Text("Home"),
-              selectedColor: Colors.blue,
-            ),
+      body: ChangeNotifierProvider(
+        create: (context) => BodyHeight(bodyHeight),
+        child: Scaffold(
+          appBar: myAppBar,
+          body: _container.elementAt(_currentIndex),
+          bottomNavigationBar: SalomonBottomBar(
+            currentIndex: _currentIndex,
+            onTap: (i) => setState(() {
+              _currentIndex = i;
+              _onItemTapped(_currentIndex);
+              // print(_currentIndex);
+            }),
+            // selectedItemColor: Colors.amber,
+            unselectedItemColor: Colors.blue,
+            items: [
+              /// Home
+              SalomonBottomBarItem(
+                icon: Icon(Icons.home),
+                title: Text("Home"),
+                selectedColor: Colors.blue,
+              ),
 
-            /// Likes
-            SalomonBottomBarItem(
-              icon: Icon(Icons.speed),
-              title: Text("Dashboard"),
-              selectedColor: Colors.blue,
-            ),
+              /// Likes
+              SalomonBottomBarItem(
+                icon: Icon(Icons.speed),
+                title: Text("Dashboard"),
+                selectedColor: Colors.blue,
+              ),
 
-            /// Profile
-            SalomonBottomBarItem(
-              icon: Icon(Icons.person),
-              title: Text("Profile"),
-              selectedColor: Colors.blue,
-            ),
-          ],
+              /// Profile
+              SalomonBottomBarItem(
+                icon: Icon(Icons.person),
+                title: Text("Profile"),
+                selectedColor: Colors.blue,
+              ),
+            ],
+          ),
         ),
       ),
     );

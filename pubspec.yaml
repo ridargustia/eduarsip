@@ -26,6 +26,8 @@ dependencies:
   flutter_slide_drawer: ^1.0.0
   salomon_bottom_bar: ^3.2.0
   provider: ^5.0.0
+  carousel_slider: ^4.0.0
+  card_swiper: ^1.0.4
 
 
   # The following adds the Cupertino Icons font to your application.
