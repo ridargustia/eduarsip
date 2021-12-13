@@ -18,7 +18,7 @@ class DashboardScreen extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.vertical,
       child: Container(
-        height: MediaQuery.of(context).size.height,
+        // height: bodyHeight.height,
         width: MediaQuery.of(context).size.width,
         color: Colors.grey.shade200,
         child: Column(
@@ -92,6 +92,69 @@ class DashboardScreen extends StatelessWidget {
                   size: 20,
                   color: Colors.grey.shade100,
                 ),
+              ),
+            ),
+            Container(
+              height: bodyHeight.height! * 0.5,
+              width: MediaQuery.of(context).size.width,
+              // color: Colors.grey,
+              child: GridView.count(
+                scrollDirection: Axis.vertical,
+                primary: false,
+                padding: const EdgeInsets.all(20),
+                crossAxisSpacing: 20,
+                mainAxisSpacing: 20,
+                crossAxisCount: 4,
+                children: <Widget>[
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[100],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[200],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[300],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[400],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[500],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[600],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[100],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[200],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[300],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[400],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[500],
+                  ),
+                  Container(
+                    padding: const EdgeInsets.all(8),
+                    color: Colors.teal[600],
+                  ),
+                ],
               ),
             ),
           ],
