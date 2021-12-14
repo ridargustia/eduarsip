@@ -2,7 +2,7 @@ import '../widgets/dashboardScreen/thumbMenu.dart';
 
 import '../providers/BodyHeight.dart';
 import 'package:flutter/material.dart';
-import 'package:carousel_slider/carousel_slider.dart';
+// import 'package:carousel_slider/carousel_slider.dart';
 import 'package:card_swiper/card_swiper.dart';
 import 'package:provider/provider.dart';
 import '../dummyData.dart' as dummy;
