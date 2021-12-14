@@ -1,3 +1,5 @@
+import '../widgets/dashboardScreen/thumbMenu.dart';
+
 import '../providers/BodyHeight.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
@@ -101,58 +103,62 @@ class DashboardScreen extends StatelessWidget {
               child: GridView.count(
                 scrollDirection: Axis.vertical,
                 primary: false,
-                padding: const EdgeInsets.all(20),
+                padding: EdgeInsets.symmetric(
+                  horizontal: 25,
+                  // vertical: 5,
+                ),
                 crossAxisSpacing: 20,
-                mainAxisSpacing: 20,
+                mainAxisSpacing: 10,
+                childAspectRatio: 1 / 1.25,
                 crossAxisCount: 4,
-                children: <Widget>[
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[100],
+                children: [
+                  ThumbMenu(
+                    title: "Peminjaman",
+                    icon: Icons.feed,
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[200],
+                  ThumbMenu(
+                    title: "Pengembalian",
+                    icon: Icons.feed,
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[300],
+                  ThumbMenu(
+                    title: "Arsip",
+                    icon: Icons.inventory,
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[400],
+                  ThumbMenu(
+                    title: "Rak",
+                    icon: Icons.corporate_fare,
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[500],
+                  ThumbMenu(
+                    title: "Baris",
+                    icon: Icons.dns,
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[600],
+                  ThumbMenu(
+                    title: "Box",
+                    icon: Icons.inbox,
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[100],
+                  ThumbMenu(
+                    title: "Map",
+                    icon: Icons.drafts,
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[200],
+                  ThumbMenu(
+                    title: "Laporan",
+                    icon: Icons.assignment,
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[300],
+                  ThumbMenu(
+                    title: "Lokasi Arsip",
+                    icon: Icons.fmd_good,
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[400],
+                  ThumbMenu(
+                    title: "Instansi",
+                    icon: Icons.business,
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[500],
+                  ThumbMenu(
+                    title: "Cabang",
+                    icon: Icons.business,
                   ),
-                  Container(
-                    padding: const EdgeInsets.all(8),
-                    color: Colors.teal[600],
+                  ThumbMenu(
+                    title: "Divisi",
+                    icon: Icons.business,
                   ),
                 ],
               ),
