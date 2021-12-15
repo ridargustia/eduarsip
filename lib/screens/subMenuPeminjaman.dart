@@ -1,4 +1,5 @@
 import 'package:eduarsip/providers/BodyHeight.dart';
+import 'package:eduarsip/screens/addPeminjaman.dart';
 import 'package:provider/provider.dart';
 
 import '../widgets/subMenu/buttonSubMenu.dart';
@@ -40,7 +41,8 @@ class SubMenuPeminjaman extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Tambah Peminjaman",
-                onTap: () {},
+                onTap: () =>
+                    Navigator.of(context).pushNamed(AddPeminjaman.routeName),
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
