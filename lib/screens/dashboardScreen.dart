@@ -1,3 +1,14 @@
+import './subMenuArsip.dart';
+import './subMenuBaris.dart';
+import './subMenuBox.dart';
+import './subMenuCabang.dart';
+import './subMenuDivisi.dart';
+import './subMenuInstansi.dart';
+import './subMenuLaporan.dart';
+import './subMenuLokasi.dart';
+import './subMenuMap.dart';
+import './subMenuRak.dart';
+import './subMenuPengembalian.dart';
 import './subMenuPeminjaman.dart';
 
 import '../widgets/dashboardScreen/thumbMenu.dart';
@@ -123,46 +134,68 @@ class DashboardScreen extends StatelessWidget {
                   ThumbMenu(
                     title: "Pengembalian",
                     icon: Icons.feed,
+                    onTap: () => Navigator.of(context)
+                        .pushNamed(SubMenuPengembalian.routeName),
                   ),
                   ThumbMenu(
                     title: "Arsip",
                     icon: Icons.inventory,
+                    onTap: () =>
+                        Navigator.of(context).pushNamed(SubMenuArsip.routeName),
                   ),
                   ThumbMenu(
                     title: "Rak",
                     icon: Icons.corporate_fare,
+                    onTap: () =>
+                        Navigator.of(context).pushNamed(SubMenuRak.routeName),
                   ),
                   ThumbMenu(
                     title: "Baris",
                     icon: Icons.dns,
+                    onTap: () =>
+                        Navigator.of(context).pushNamed(SubMenuBaris.routeName),
                   ),
                   ThumbMenu(
                     title: "Box",
                     icon: Icons.inbox,
+                    onTap: () =>
+                        Navigator.of(context).pushNamed(SubMenuBox.routeName),
                   ),
                   ThumbMenu(
                     title: "Map",
                     icon: Icons.drafts,
+                    onTap: () =>
+                        Navigator.of(context).pushNamed(SubMenuMap.routeName),
                   ),
                   ThumbMenu(
                     title: "Laporan",
                     icon: Icons.assignment,
+                    onTap: () => Navigator.of(context)
+                        .pushNamed(SubMenuLaporan.routeName),
                   ),
                   ThumbMenu(
                     title: "Lokasi Arsip",
                     icon: Icons.fmd_good,
+                    onTap: () => Navigator.of(context)
+                        .pushNamed(SubMenuLokasi.routeName),
                   ),
                   ThumbMenu(
                     title: "Instansi",
                     icon: Icons.business,
+                    onTap: () => Navigator.of(context)
+                        .pushNamed(SubMenuInstansi.routeName),
                   ),
                   ThumbMenu(
                     title: "Cabang",
                     icon: Icons.business,
+                    onTap: () => Navigator.of(context)
+                        .pushNamed(SubMenuCabang.routeName),
                   ),
                   ThumbMenu(
                     title: "Divisi",
                     icon: Icons.business,
+                    onTap: () => Navigator.of(context)
+                        .pushNamed(SubMenuDivisi.routeName),
                   ),
                 ],
               ),
