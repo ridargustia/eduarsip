@@ -1,16 +1,15 @@
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 
-class AddPeminjaman extends StatefulWidget {
-  static const routeName = '/add_peminjaman';
+class AddPengembalian extends StatefulWidget {
+  static const routeName = '/add_pengembalian';
 
   @override
-  _AddPeminjamanState createState() => _AddPeminjamanState();
+  _AddPengembalianState createState() => _AddPengembalianState();
 }
 
-class _AddPeminjamanState extends State<AddPeminjaman> {
+class _AddPengembalianState extends State<AddPengembalian> {
   DateTime _selectDatePeminjaman = DateTime.now();
-  DateTime _selectDatePengembalian = DateTime.now();
 
   @override
   Widget build(BuildContext context) {
@@ -24,9 +23,9 @@ class _AddPeminjamanState extends State<AddPeminjaman> {
       ),
     );
 
-    //SIZE SCREENS
     final mediaQueryHeight = MediaQuery.of(context).size.height;
     final paddingTop = MediaQuery.of(context).padding.top;
+
     final bodyHeight =
         mediaQueryHeight - myAppBar.preferredSize.height - paddingTop;
 
@@ -43,165 +42,79 @@ class _AddPeminjamanState extends State<AddPeminjaman> {
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                crossAxisAlignment: CrossAxisAlignment.center,
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Text(
-                        "Tanggal Peminjaman",
-                        style: TextStyle(
-                          fontSize: 13,
-                          // color: Colors.grey,
-                          fontFamily: 'Poppins',
-                        ),
-                      ),
-                      Row(
-                        children: [
-                          Container(
-                            width: MediaQuery.of(context).size.width * 0.33,
-                            // height: bodyHeight * 0.1,
-                            // color: Colors.amber,
-                            decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10)),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.shade300,
-                                  blurRadius: 5,
-                                  offset: Offset(2, 4),
-                                  spreadRadius: 2,
-                                ),
-                              ],
-                            ),
-                            margin: EdgeInsets.only(top: 5),
-                            child: TextField(
-                              textAlign: TextAlign.center,
-                              readOnly: true,
-                              controller: TextEditingController(
-                                text: "${_selectDatePeminjaman.toLocal()}"
-                                    .split(' ')[0],
-                              ),
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.bold,
-                              ),
-                              obscureText: false,
-                              decoration: InputDecoration(
-                                contentPadding: EdgeInsets.symmetric(
-                                    vertical: 10, horizontal: 10),
-                                border: OutlineInputBorder(
-                                  // borderSide: BorderSide(),
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(10),
-                                  ),
-                                ),
-                                fillColor: Colors.white,
-                                filled: true,
-                              ),
-                            ),
-                          ),
-                          IconButton(
-                            onPressed: () {
-                              showDatePicker(
-                                context: context,
-                                initialDate: DateTime.now(),
-                                firstDate: DateTime(1999),
-                                lastDate: DateTime(2050),
-                                initialEntryMode: DatePickerEntryMode.input,
-                              ).then((value) {
-                                if (value != null) {
-                                  setState(() {
-                                    _selectDatePeminjaman = value;
-                                  });
-                                }
-                              });
-                            },
-                            icon: Icon(Icons.calendar_today),
-                          ),
-                        ],
-                      ),
-                    ],
+                  Text(
+                    "Tanggal Pengembalian",
+                    style: TextStyle(
+                      fontSize: 13,
+                      // color: Colors.grey,
+                      fontFamily: 'Poppins',
+                    ),
                   ),
-                  Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
+                  Row(
                     children: [
-                      Text(
-                        "Tanggal Pengembalian",
-                        style: TextStyle(
-                          fontSize: 13,
-                          // color: Colors.grey,
-                          fontFamily: 'Poppins',
+                      Container(
+                        width: MediaQuery.of(context).size.width * 0.8,
+                        // height: bodyHeight * 0.1,
+                        // color: Colors.amber,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(Radius.circular(10)),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Colors.grey.shade300,
+                              blurRadius: 5,
+                              offset: Offset(2, 4),
+                              spreadRadius: 2,
+                            ),
+                          ],
+                        ),
+                        margin: EdgeInsets.only(top: 5),
+                        child: TextField(
+                          textAlign: TextAlign.center,
+                          readOnly: true,
+                          controller: TextEditingController(
+                            text: "${_selectDatePeminjaman.toLocal()}"
+                                .split(' ')[0],
+                          ),
+                          style: TextStyle(
+                            fontSize: 15,
+                            fontFamily: 'Poppins',
+                            fontWeight: FontWeight.bold,
+                          ),
+                          obscureText: false,
+                          decoration: InputDecoration(
+                            contentPadding: EdgeInsets.symmetric(
+                                vertical: 10, horizontal: 10),
+                            border: OutlineInputBorder(
+                              // borderSide: BorderSide(),
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(10),
+                              ),
+                            ),
+                            fillColor: Colors.white,
+                            filled: true,
+                          ),
                         ),
                       ),
-                      Row(
-                        children: [
-                          Container(
-                            width: MediaQuery.of(context).size.width * 0.33,
-
-                            // height: bodyHeight * 0.1,
-                            // color: Colors.amber,
-                            decoration: BoxDecoration(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(10)),
-                              boxShadow: [
-                                BoxShadow(
-                                  color: Colors.grey.shade300,
-                                  blurRadius: 5,
-                                  offset: Offset(2, 4),
-                                  spreadRadius: 2,
-                                ),
-                              ],
-                            ),
-                            margin: EdgeInsets.only(top: 5),
-                            child: TextField(
-                              textAlign: TextAlign.center,
-                              readOnly: true,
-                              controller: TextEditingController(
-                                text: "${_selectDatePengembalian.toLocal()}"
-                                    .split(' ')[0],
-                              ),
-                              style: TextStyle(
-                                fontSize: 15,
-                                fontFamily: 'Poppins',
-                                fontWeight: FontWeight.bold,
-                              ),
-                              obscureText: false,
-                              decoration: InputDecoration(
-                                contentPadding: EdgeInsets.symmetric(
-                                    vertical: 10, horizontal: 10),
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(10),
-                                  ),
-                                ),
-                                fillColor: Colors.white,
-                                filled: true,
-                              ),
-                            ),
-                          ),
-                          IconButton(
-                            onPressed: () {
-                              showDatePicker(
-                                context: context,
-                                initialDate: DateTime.now(),
-                                firstDate: DateTime(1999),
-                                lastDate: DateTime(2050),
-                                initialEntryMode: DatePickerEntryMode.input,
-                              ).then((value) {
-                                if (value != null) {
-                                  setState(() {
-                                    _selectDatePengembalian = value;
-                                  });
-                                }
+                      IconButton(
+                        onPressed: () {
+                          showDatePicker(
+                            context: context,
+                            initialDate: DateTime.now(),
+                            firstDate: DateTime(1999),
+                            lastDate: DateTime(2050),
+                            initialEntryMode: DatePickerEntryMode.input,
+                          ).then((value) {
+                            if (value != null) {
+                              setState(() {
+                                _selectDatePeminjaman = value;
                               });
-                            },
-                            icon: Icon(Icons.calendar_today),
-                          ),
-                        ],
+                            }
+                          });
+                        },
+                        icon: Icon(Icons.calendar_today),
                       ),
                     ],
                   ),
@@ -212,7 +125,7 @@ class _AddPeminjamanState extends State<AddPeminjaman> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Instansi",
+                    "Nama Arsip yang akan dikembalikan",
                     style: TextStyle(
                       fontSize: 13,
                       // color: Colors.grey,
@@ -238,7 +151,7 @@ class _AddPeminjamanState extends State<AddPeminjaman> {
                       showSelectedItems: true,
                       items: ["Manager", "Eksternal", "Internal", 'IT'],
                       dropdownSearchDecoration: InputDecoration(
-                        hintText: "-- Silahkan Pilih Instansi --",
+                        hintText: "-- Belum ada peminjaman Arsip --",
                         fillColor: Colors.white,
                         filled: true,
                         border: OutlineInputBorder(
@@ -261,7 +174,7 @@ class _AddPeminjamanState extends State<AddPeminjaman> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Cabang",
+                    "Nama Peminjam",
                     style: TextStyle(
                       fontSize: 13,
                       // color: Colors.grey,
@@ -282,32 +195,31 @@ class _AddPeminjamanState extends State<AddPeminjaman> {
                         ),
                       ],
                     ),
-                    child: DropdownSearch<String>(
-                      mode: Mode.MENU,
-                      showSelectedItems: true,
-                      // showSearchBox: true,
-                      items: [
-                        "Manager Cabang",
-                        "Administrator",
-                        "Internal",
-                        'IT'
-                      ],
-                      dropdownSearchDecoration: InputDecoration(
-                        hintText: "-- Pilih Instansi Dulu --",
-                        counterStyle: TextStyle(fontSize: 20),
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      enabled: false,
+                      // controller: TextEditingController(
+                      //   text: "${_selectDatePeminjaman.toLocal()}"
+                      //       .split(' ')[0],
+                      // ),
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                      ),
+                      obscureText: false,
+                      decoration: InputDecoration(
+                        contentPadding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                        border: OutlineInputBorder(
+                          // borderSide: BorderSide(),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
                         fillColor: Colors.white,
                         filled: true,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        contentPadding: EdgeInsets.symmetric(
-                          horizontal: 20,
-                          vertical: 0.8,
-                        ),
                       ),
-                      onChanged: print,
-                      // showClearButton: true,
-                      // selectedItem: "Brazil",
                     ),
                   ),
                 ],
@@ -338,25 +250,31 @@ class _AddPeminjamanState extends State<AddPeminjaman> {
                         ),
                       ],
                     ),
-                    child: DropdownSearch<String>(
-                      mode: Mode.MENU,
-                      showSelectedItems: true,
-                      items: ["Manager", "Eksternal", "Internal", 'IT'],
-                      dropdownSearchDecoration: InputDecoration(
-                        hintText: "-- Pilih Cabang Dulu --",
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      enabled: false,
+                      // controller: TextEditingController(
+                      //   text: "${_selectDatePeminjaman.toLocal()}"
+                      //       .split(' ')[0],
+                      // ),
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                      ),
+                      obscureText: false,
+                      decoration: InputDecoration(
+                        contentPadding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                        border: OutlineInputBorder(
+                          // borderSide: BorderSide(),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
                         fillColor: Colors.white,
                         filled: true,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        contentPadding: EdgeInsets.symmetric(
-                          horizontal: 20,
-                          vertical: 0.8,
-                        ),
                       ),
-                      onChanged: print,
-                      showClearButton: true,
-                      // selectedItem: "Brazil",
                     ),
                   ),
                 ],
@@ -366,7 +284,7 @@ class _AddPeminjamanState extends State<AddPeminjaman> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Nama Arsip yang dipinjam",
+                    "Cabang",
                     style: TextStyle(
                       fontSize: 13,
                       // color: Colors.grey,
@@ -387,25 +305,31 @@ class _AddPeminjamanState extends State<AddPeminjaman> {
                         ),
                       ],
                     ),
-                    child: DropdownSearch<String>(
-                      mode: Mode.MENU,
-                      showSelectedItems: true,
-                      items: ["Manager", "Eksternal", "Internal", 'IT'],
-                      dropdownSearchDecoration: InputDecoration(
-                        hintText: "-- Pilih Divisi Dulu --",
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      enabled: false,
+                      // controller: TextEditingController(
+                      //   text: "${_selectDatePeminjaman.toLocal()}"
+                      //       .split(' ')[0],
+                      // ),
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                      ),
+                      obscureText: false,
+                      decoration: InputDecoration(
+                        contentPadding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                        border: OutlineInputBorder(
+                          // borderSide: BorderSide(),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
                         fillColor: Colors.white,
                         filled: true,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        contentPadding: EdgeInsets.symmetric(
-                          horizontal: 20,
-                          vertical: 0.8,
-                        ),
                       ),
-                      onChanged: print,
-                      showClearButton: true,
-                      // selectedItem: "Brazil",
                     ),
                   ),
                 ],
@@ -415,7 +339,7 @@ class _AddPeminjamanState extends State<AddPeminjaman> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Nama peminjam Arsip",
+                    "Instansi",
                     style: TextStyle(
                       fontSize: 13,
                       // color: Colors.grey,
@@ -436,25 +360,31 @@ class _AddPeminjamanState extends State<AddPeminjaman> {
                         ),
                       ],
                     ),
-                    child: DropdownSearch<String>(
-                      mode: Mode.MENU,
-                      showSelectedItems: true,
-                      items: ["Manager", "Eksternal", "Internal", 'IT'],
-                      dropdownSearchDecoration: InputDecoration(
-                        hintText: "-- Silahkan Pilih User --",
+                    child: TextField(
+                      textAlign: TextAlign.center,
+                      enabled: false,
+                      // controller: TextEditingController(
+                      //   text: "${_selectDatePeminjaman.toLocal()}"
+                      //       .split(' ')[0],
+                      // ),
+                      style: TextStyle(
+                        fontSize: 15,
+                        fontFamily: 'Poppins',
+                        fontWeight: FontWeight.bold,
+                      ),
+                      obscureText: false,
+                      decoration: InputDecoration(
+                        contentPadding:
+                            EdgeInsets.symmetric(vertical: 10, horizontal: 10),
+                        border: OutlineInputBorder(
+                          // borderSide: BorderSide(),
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(10),
+                          ),
+                        ),
                         fillColor: Colors.white,
                         filled: true,
-                        border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(10),
-                        ),
-                        contentPadding: EdgeInsets.symmetric(
-                          horizontal: 20,
-                          vertical: 0.8,
-                        ),
                       ),
-                      onChanged: print,
-                      showClearButton: true,
-                      // selectedItem: "Brazil",
                     ),
                   ),
                 ],

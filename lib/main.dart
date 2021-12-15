@@ -1,5 +1,7 @@
 import 'package:eduarsip/providers/BodyHeight.dart';
+import 'package:eduarsip/screens/addArsip.dart';
 import 'package:eduarsip/screens/addPeminjaman.dart';
+import 'package:eduarsip/screens/addPengembalian.dart';
 import 'package:eduarsip/screens/subMenuArsip.dart';
 import 'package:eduarsip/screens/subMenuBaris.dart';
 import 'package:eduarsip/screens/subMenuBox.dart';
@@ -62,6 +64,8 @@ class MyApp extends StatelessWidget {
           SubMenuCabang.routeName: (context) => SubMenuCabang(),
           SubMenuDivisi.routeName: (context) => SubMenuDivisi(),
           AddPeminjaman.routeName: (context) => AddPeminjaman(),
+          AddPengembalian.routeName: (context) => AddPengembalian(),
+          AddArsip.routeName: (context) => AddArsip(),
         },
       ),
     );

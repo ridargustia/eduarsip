@@ -1,4 +1,5 @@
 import 'package:eduarsip/providers/BodyHeight.dart';
+import 'package:eduarsip/screens/addPengembalian.dart';
 import 'package:provider/provider.dart';
 
 import '../widgets/subMenu/buttonSubMenu.dart';
@@ -40,7 +41,9 @@ class SubMenuPengembalian extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Tambah Pengembalian",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddPengembalian.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,

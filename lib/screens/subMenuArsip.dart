@@ -1,4 +1,5 @@
 import 'package:eduarsip/providers/BodyHeight.dart';
+import 'package:eduarsip/screens/addArsip.dart';
 import 'package:provider/provider.dart';
 
 import '../widgets/subMenu/buttonSubMenu.dart';
@@ -40,7 +41,9 @@ class SubMenuArsip extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Tambah Arsip",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddArsip.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
