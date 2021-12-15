@@ -1,4 +1,7 @@
-import './providers/BodyHeight.dart';
+import 'package:eduarsip/providers/BodyHeight.dart';
+
+import './screens/subMenuPeminjaman.dart';
+
 import './screens/loginScreen.dart';
 import './screens/slideDrawer.dart';
 
@@ -28,11 +31,13 @@ class MyApp extends StatelessWidget {
           primaryColor: Colors.blue,
           accentColor: Colors.white,
           fontFamily: 'Poppins',
+          iconTheme: IconThemeData(color: Colors.black),
         ),
         home: SplashScreen(),
         routes: {
           LoginScreen.routeName: (context) => LoginScreen(),
           SlideDrawer.routeName: (context) => SlideDrawer(),
+          SubMenuPeminjaman.routeName: (context) => SubMenuPeminjaman(),
         },
       ),
     );

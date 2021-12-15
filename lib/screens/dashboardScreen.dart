@@ -1,3 +1,5 @@
+import './subMenuPeminjaman.dart';
+
 import '../widgets/dashboardScreen/thumbMenu.dart';
 
 import '../providers/BodyHeight.dart';
@@ -115,6 +117,8 @@ class DashboardScreen extends StatelessWidget {
                   ThumbMenu(
                     title: "Peminjaman",
                     icon: Icons.feed,
+                    onTap: () => Navigator.of(context)
+                        .pushNamed(SubMenuPeminjaman.routeName),
                   ),
                   ThumbMenu(
                     title: "Pengembalian",
