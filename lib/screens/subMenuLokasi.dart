@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/addLokasi.dart';
+
 import '../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
@@ -39,7 +41,9 @@ class SubMenuLokasi extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Tambah Lokasi",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddLokasi.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,

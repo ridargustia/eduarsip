@@ -1,5 +1,5 @@
-import 'package:eduarsip/screens/addMap.dart';
-
+import './screens/addLokasi.dart';
+import './screens/addMap.dart';
 import './screens/addBox.dart';
 import './screens/addBaris.dart';
 import './screens/addArsip.dart';
@@ -74,6 +74,7 @@ class MyApp extends StatelessWidget {
           AddBaris.routeName: (context) => AddBaris(),
           AddBox.routeName: (context) => AddBox(),
           AddMap.routeName: (context) => AddMap(),
+          AddLokasi.routeName: (context) => AddLokasi(),
         },
       ),
     );
