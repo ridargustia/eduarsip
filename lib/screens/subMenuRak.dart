@@ -1,4 +1,5 @@
 import 'package:eduarsip/providers/BodyHeight.dart';
+import 'package:eduarsip/screens/addRak.dart';
 import 'package:provider/provider.dart';
 
 import '../widgets/subMenu/buttonSubMenu.dart';
@@ -39,7 +40,9 @@ class SubMenuRak extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Tambah Rak",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddRak.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,

@@ -1,18 +1,18 @@
-import 'package:eduarsip/providers/BodyHeight.dart';
-import 'package:eduarsip/screens/addArsip.dart';
-import 'package:eduarsip/screens/addPeminjaman.dart';
-import 'package:eduarsip/screens/addPengembalian.dart';
-import 'package:eduarsip/screens/subMenuArsip.dart';
-import 'package:eduarsip/screens/subMenuBaris.dart';
-import 'package:eduarsip/screens/subMenuBox.dart';
-import 'package:eduarsip/screens/subMenuCabang.dart';
-import 'package:eduarsip/screens/subMenuDivisi.dart';
-import 'package:eduarsip/screens/subMenuInstansi.dart';
-import 'package:eduarsip/screens/subMenuLaporan.dart';
-import 'package:eduarsip/screens/subMenuLokasi.dart';
-import 'package:eduarsip/screens/subMenuMap.dart';
-import 'package:eduarsip/screens/subMenuPengembalian.dart';
-import 'package:eduarsip/screens/subMenuRak.dart';
+import './screens/addArsip.dart';
+import './screens/addPeminjaman.dart';
+import './screens/addPengembalian.dart';
+import './screens/addRak.dart';
+import './screens/subMenuArsip.dart';
+import './screens/subMenuBaris.dart';
+import './screens/subMenuBox.dart';
+import './screens/subMenuCabang.dart';
+import './screens/subMenuDivisi.dart';
+import './screens/subMenuInstansi.dart';
+import './screens/subMenuLaporan.dart';
+import './screens/subMenuLokasi.dart';
+import './screens/subMenuMap.dart';
+import './screens/subMenuPengembalian.dart';
+import './screens/subMenuRak.dart';
 
 import './screens/subMenuPeminjaman.dart';
 
@@ -66,6 +66,7 @@ class MyApp extends StatelessWidget {
           AddPeminjaman.routeName: (context) => AddPeminjaman(),
           AddPengembalian.routeName: (context) => AddPengembalian(),
           AddArsip.routeName: (context) => AddArsip(),
+          AddRak.routeName: (context) => AddRak(),
         },
       ),
     );
