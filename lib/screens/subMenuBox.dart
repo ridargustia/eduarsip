@@ -1,4 +1,5 @@
-import 'package:eduarsip/providers/BodyHeight.dart';
+import '../providers/BodyHeight.dart';
+import './addBox.dart';
 import 'package:provider/provider.dart';
 
 import '../widgets/subMenu/buttonSubMenu.dart';
@@ -39,7 +40,9 @@ class SubMenuBox extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Tambah Box",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddBox.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,

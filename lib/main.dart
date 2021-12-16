@@ -1,3 +1,4 @@
+import './screens/addBox.dart';
 import './screens/addBaris.dart';
 import './screens/addArsip.dart';
 import './screens/addPeminjaman.dart';
@@ -69,6 +70,7 @@ class MyApp extends StatelessWidget {
           AddArsip.routeName: (context) => AddArsip(),
           AddRak.routeName: (context) => AddRak(),
           AddBaris.routeName: (context) => AddBaris(),
+          AddBox.routeName: (context) => AddBox(),
         },
       ),
     );
