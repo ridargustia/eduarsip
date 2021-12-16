@@ -1,3 +1,4 @@
+import './screens/addInstansi.dart';
 import './screens/addLokasi.dart';
 import './screens/addMap.dart';
 import './screens/addBox.dart';
@@ -75,6 +76,7 @@ class MyApp extends StatelessWidget {
           AddBox.routeName: (context) => AddBox(),
           AddMap.routeName: (context) => AddMap(),
           AddLokasi.routeName: (context) => AddLokasi(),
+          AddInstansi.routeName: (context) => AddInstansi(),
         },
       ),
     );

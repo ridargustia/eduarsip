@@ -1,3 +1,5 @@
+import './addInstansi.dart';
+
 import '../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
@@ -39,7 +41,9 @@ class SubMenuInstansi extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Tambah Instansi",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddInstansi.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
