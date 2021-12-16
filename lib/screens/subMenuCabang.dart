@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/addCabang.dart';
+
 import '../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
@@ -39,7 +41,9 @@ class SubMenuCabang extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Tambah Cabang",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddCabang.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
