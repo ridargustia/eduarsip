@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/addDivisi.dart';
+
 import '../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
@@ -39,7 +41,9 @@ class SubMenuDivisi extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Tambah Divisi",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddDivisi.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
