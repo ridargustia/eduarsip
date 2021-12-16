@@ -57,6 +57,7 @@ flutter:
     - assets/images/bg_drawer.jpg
     - assets/images/default_user.png
     - assets/images/logo_transparant_resize.png
+    - assets/images/image_header_login.png
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

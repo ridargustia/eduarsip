@@ -51,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   SizedBox(
-                    height: bodyHeight * 0.15,
+                    height: bodyHeight * 0.13,
                     // color: Colors.green.shade200,
                   ),
                   Column(
@@ -62,10 +62,10 @@ class _LoginScreenState extends State<LoginScreen> {
                         child: Container(
                           // color: Colors.amber,
                           width: mediaQueryWidth,
-                          height: bodyHeight * 0.17,
+                          height: bodyHeight * 0.25,
                           // padding: EdgeInsets.symmetric(horizontal: 30),
                           child: Image.asset(
-                            "assets/images/only_logo_eduarsip_transparant.png",
+                            "assets/images/image_header_login.png",
                           ),
                         ),
                       )
@@ -81,7 +81,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   //   ),
                   // ),
                   SizedBox(
-                    height: bodyHeight * 0.12,
+                    height: bodyHeight * 0.1,
                   ),
                   Container(
                     height: bodyHeight * 0.13,
