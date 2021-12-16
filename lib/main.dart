@@ -1,3 +1,4 @@
+import './screens/addBaris.dart';
 import './screens/addArsip.dart';
 import './screens/addPeminjaman.dart';
 import './screens/addPengembalian.dart';
@@ -67,6 +68,7 @@ class MyApp extends StatelessWidget {
           AddPengembalian.routeName: (context) => AddPengembalian(),
           AddArsip.routeName: (context) => AddArsip(),
           AddRak.routeName: (context) => AddRak(),
+          AddBaris.routeName: (context) => AddBaris(),
         },
       ),
     );

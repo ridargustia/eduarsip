@@ -1,4 +1,5 @@
 import 'package:eduarsip/providers/BodyHeight.dart';
+import 'package:eduarsip/screens/addBaris.dart';
 import 'package:provider/provider.dart';
 
 import '../widgets/subMenu/buttonSubMenu.dart';
@@ -39,7 +40,9 @@ class SubMenuBaris extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Tambah Baris",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddBaris.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
