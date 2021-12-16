@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/addMap.dart';
+
 import './screens/addBox.dart';
 import './screens/addBaris.dart';
 import './screens/addArsip.dart';
@@ -71,6 +73,7 @@ class MyApp extends StatelessWidget {
           AddRak.routeName: (context) => AddRak(),
           AddBaris.routeName: (context) => AddBaris(),
           AddBox.routeName: (context) => AddBox(),
+          AddMap.routeName: (context) => AddMap(),
         },
       ),
     );

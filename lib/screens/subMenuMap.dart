@@ -1,3 +1,5 @@
+import './addMap.dart';
+
 import '../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
@@ -39,7 +41,9 @@ class SubMenuMap extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Tambah Map",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddMap.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
