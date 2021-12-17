@@ -117,6 +117,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           // color: Colors.pink.shade200,
                           width: 30,
                           child: Checkbox(
+                            activeColor: Colors.blue,
                             // fillColor:
                             // MaterialStateProperty.all(Colors.black),
                             value: isChecked,

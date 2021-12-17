@@ -58,6 +58,11 @@ flutter:
     - assets/images/default_user.png
     - assets/images/logo_transparant_resize.png
     - assets/images/image_header_login.png
+    - assets/images/carousel_banner1.jpg
+    - assets/images/carousel_banner2.jpg
+    - assets/images/carousel_banner3.jpg
+    - assets/images/carousel_banner4.jpg
+    - assets/images/carousel_banner5.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

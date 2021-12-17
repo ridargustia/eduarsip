@@ -70,7 +70,7 @@ class DashboardScreen extends StatelessWidget {
               height: bodyHeight.height! * 0.34,
               child: Swiper(
                 itemBuilder: (BuildContext context, int index) {
-                  return Image.network(
+                  return Image.asset(
                     dummy.images[index],
                     fit: BoxFit.cover,
                     // height: 200,
