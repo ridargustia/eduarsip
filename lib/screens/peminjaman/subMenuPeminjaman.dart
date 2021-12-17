@@ -1,3 +1,5 @@
+import './listPeminjaman.dart';
+
 import '../../providers/BodyHeight.dart';
 import './addPeminjaman.dart';
 import 'package:provider/provider.dart';
@@ -49,7 +51,9 @@ class SubMenuPeminjaman extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Data Peminjaman",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListPeminjaman.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,

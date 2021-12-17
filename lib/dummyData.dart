@@ -18,6 +18,54 @@ final List<String> imgList = [
 //   'https://images.unsplash.com/photo-1519985176271-adb1088fa94c?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=a0c8d632e977f94e5d312d9893258f59&auto=format&fit=crop&w=1355&q=80',
 // ];
 
+final List<Map<String, dynamic>> listPeminjaman = [
+  //key=String, value=dynamic
+  {
+    "tgl_peminjaman": "4/12/2021",
+    "tgl_pengembalian": "10/12/2021",
+    "nama_arsip": "Berita Acara Bimtek 1",
+    "nama_peminjam": "Ridar Admin",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "4 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+  {
+    "tgl_peminjaman": "5/12/2021",
+    "tgl_pengembalian": "15/12/2021",
+    "nama_arsip": "Berita Acara Bimtek 2",
+    "nama_peminjam": "Ridar Admin",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "1 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+  {
+    "tgl_peminjaman": "6/12/2021",
+    "tgl_pengembalian": "10/12/2021",
+    "nama_arsip": "Berita Acara Bimtek 3",
+    "nama_peminjam": "Ridar Admin",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "4 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+  {
+    "tgl_peminjaman": "27/12/2021",
+    "tgl_pengembalian": "30/12/2021",
+    "nama_arsip": "Berita Acara Bimtek 4",
+    "nama_peminjam": "Ridar Admin",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "4 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+];
+
 List<String> images = [
   'assets/images/carousel_banner1.jpg',
   'assets/images/carousel_banner2.jpg',
