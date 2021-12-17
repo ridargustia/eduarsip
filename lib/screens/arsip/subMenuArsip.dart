@@ -1,13 +1,13 @@
-import 'package:eduarsip/providers/BodyHeight.dart';
-import 'package:eduarsip/screens/addPeminjaman.dart';
+import '../../providers/BodyHeight.dart';
+import './addArsip.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/subMenu/buttonSubMenu.dart';
+import '../../widgets/subMenu/buttonSubMenu.dart';
 import 'package:flutter/material.dart';
 
-class SubMenuPeminjaman extends StatelessWidget {
+class SubMenuArsip extends StatelessWidget {
   // PeminjamanPage();
-  static const routeName = '/submenu_peminjaman';
+  static const routeName = '/submenu_arsip';
 
   @override
   Widget build(BuildContext context) {
@@ -40,15 +40,30 @@ class SubMenuPeminjaman extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ButtonSubMenu(
-                title: "Tambah Peminjaman",
-                onTap: () =>
-                    Navigator.of(context).pushNamed(AddPeminjaman.routeName),
+                title: "Tambah Arsip",
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddArsip.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
               ),
               ButtonSubMenu(
-                title: "Data Peminjaman",
+                title: "Data Arsip",
+                onTap: () {},
+              ),
+              SizedBox(
+                height: bodyHeight * 0.05,
+              ),
+              ButtonSubMenu(
+                title: "Data Arsip Aktif",
+                onTap: () {},
+              ),
+              SizedBox(
+                height: bodyHeight * 0.05,
+              ),
+              ButtonSubMenu(
+                title: "Data Arsip Inaktif",
                 onTap: () {},
               ),
               SizedBox(

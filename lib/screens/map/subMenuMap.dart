@@ -1,13 +1,13 @@
-import 'package:eduarsip/providers/BodyHeight.dart';
-import 'package:eduarsip/screens/addArsip.dart';
+import './addMap.dart';
+
+import '../../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/subMenu/buttonSubMenu.dart';
+import '../../widgets/subMenu/buttonSubMenu.dart';
 import 'package:flutter/material.dart';
 
-class SubMenuArsip extends StatelessWidget {
-  // PeminjamanPage();
-  static const routeName = '/submenu_arsip';
+class SubMenuMap extends StatelessWidget {
+  static const routeName = '/submenu_map';
 
   @override
   Widget build(BuildContext context) {
@@ -40,30 +40,16 @@ class SubMenuArsip extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ButtonSubMenu(
-                title: "Tambah Arsip",
+                title: "Tambah Map",
                 onTap: () {
-                  Navigator.of(context).pushNamed(AddArsip.routeName);
+                  Navigator.of(context).pushNamed(AddMap.routeName);
                 },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
               ),
               ButtonSubMenu(
-                title: "Data Arsip",
-                onTap: () {},
-              ),
-              SizedBox(
-                height: bodyHeight * 0.05,
-              ),
-              ButtonSubMenu(
-                title: "Data Arsip Aktif",
-                onTap: () {},
-              ),
-              SizedBox(
-                height: bodyHeight * 0.05,
-              ),
-              ButtonSubMenu(
-                title: "Data Arsip Inaktif",
+                title: "Data Map",
                 onTap: () {},
               ),
               SizedBox(

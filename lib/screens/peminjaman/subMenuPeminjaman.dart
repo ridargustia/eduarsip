@@ -1,12 +1,13 @@
-import '../providers/BodyHeight.dart';
-import './addBox.dart';
+import '../../providers/BodyHeight.dart';
+import './addPeminjaman.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/subMenu/buttonSubMenu.dart';
+import '../../widgets/subMenu/buttonSubMenu.dart';
 import 'package:flutter/material.dart';
 
-class SubMenuBox extends StatelessWidget {
-  static const routeName = '/submenu_box';
+class SubMenuPeminjaman extends StatelessWidget {
+  // PeminjamanPage();
+  static const routeName = '/submenu_peminjaman';
 
   @override
   Widget build(BuildContext context) {
@@ -39,16 +40,15 @@ class SubMenuBox extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ButtonSubMenu(
-                title: "Tambah Box",
-                onTap: () {
-                  Navigator.of(context).pushNamed(AddBox.routeName);
-                },
+                title: "Tambah Peminjaman",
+                onTap: () =>
+                    Navigator.of(context).pushNamed(AddPeminjaman.routeName),
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
               ),
               ButtonSubMenu(
-                title: "Data Box",
+                title: "Data Peminjaman",
                 onTap: () {},
               ),
               SizedBox(

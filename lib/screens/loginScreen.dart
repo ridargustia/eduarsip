@@ -1,5 +1,5 @@
-import 'package:eduarsip/screens/slideDrawer.dart';
-import 'package:eduarsip/widgets/loginScreen/loginButton.dart';
+import './slideDrawer.dart';
+import '../widgets/loginScreen/loginButton.dart';
 
 import '../widgets/loginScreen/textFieldLogin.dart';
 import 'package:flutter/material.dart';

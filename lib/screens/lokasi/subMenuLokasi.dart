@@ -1,13 +1,13 @@
-import './addMap.dart';
+import './addLokasi.dart';
 
-import '../providers/BodyHeight.dart';
+import '../../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/subMenu/buttonSubMenu.dart';
+import '../../widgets/subMenu/buttonSubMenu.dart';
 import 'package:flutter/material.dart';
 
-class SubMenuMap extends StatelessWidget {
-  static const routeName = '/submenu_map';
+class SubMenuLokasi extends StatelessWidget {
+  static const routeName = '/submenu_lokasi';
 
   @override
   Widget build(BuildContext context) {
@@ -40,16 +40,16 @@ class SubMenuMap extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ButtonSubMenu(
-                title: "Tambah Map",
+                title: "Tambah Lokasi",
                 onTap: () {
-                  Navigator.of(context).pushNamed(AddMap.routeName);
+                  Navigator.of(context).pushNamed(AddLokasi.routeName);
                 },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
               ),
               ButtonSubMenu(
-                title: "Data Map",
+                title: "Data Lokasi",
                 onTap: () {},
               ),
               SizedBox(

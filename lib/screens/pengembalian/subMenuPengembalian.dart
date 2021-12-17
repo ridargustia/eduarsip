@@ -1,12 +1,13 @@
-import 'package:eduarsip/providers/BodyHeight.dart';
-import 'package:eduarsip/screens/addBaris.dart';
+import '../../providers/BodyHeight.dart';
+import './addPengembalian.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/subMenu/buttonSubMenu.dart';
+import '../../widgets/subMenu/buttonSubMenu.dart';
 import 'package:flutter/material.dart';
 
-class SubMenuBaris extends StatelessWidget {
-  static const routeName = '/submenu_baris';
+class SubMenuPengembalian extends StatelessWidget {
+  // PeminjamanPage();
+  static const routeName = '/submenu_pengembalian';
 
   @override
   Widget build(BuildContext context) {
@@ -39,16 +40,16 @@ class SubMenuBaris extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ButtonSubMenu(
-                title: "Tambah Baris",
+                title: "Tambah Pengembalian",
                 onTap: () {
-                  Navigator.of(context).pushNamed(AddBaris.routeName);
+                  Navigator.of(context).pushNamed(AddPengembalian.routeName);
                 },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
               ),
               ButtonSubMenu(
-                title: "Data Baris",
+                title: "Data Pengembalian",
                 onTap: () {},
               ),
               SizedBox(

@@ -1,13 +1,13 @@
-import 'package:eduarsip/screens/addDivisi.dart';
+import './addCabang.dart';
 
-import '../providers/BodyHeight.dart';
+import '../../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/subMenu/buttonSubMenu.dart';
+import '../../widgets/subMenu/buttonSubMenu.dart';
 import 'package:flutter/material.dart';
 
-class SubMenuDivisi extends StatelessWidget {
-  static const routeName = '/submenu_divisi';
+class SubMenuCabang extends StatelessWidget {
+  static const routeName = '/submenu_cabang';
 
   @override
   Widget build(BuildContext context) {
@@ -40,16 +40,16 @@ class SubMenuDivisi extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ButtonSubMenu(
-                title: "Tambah Divisi",
+                title: "Tambah Cabang",
                 onTap: () {
-                  Navigator.of(context).pushNamed(AddDivisi.routeName);
+                  Navigator.of(context).pushNamed(AddCabang.routeName);
                 },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
               ),
               ButtonSubMenu(
-                title: "Data Divisi",
+                title: "Data Cabang",
                 onTap: () {},
               ),
               SizedBox(

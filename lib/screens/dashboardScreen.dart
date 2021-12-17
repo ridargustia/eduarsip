@@ -1,15 +1,15 @@
-import './subMenuArsip.dart';
-import './subMenuBaris.dart';
-import './subMenuBox.dart';
-import './subMenuCabang.dart';
-import './subMenuDivisi.dart';
-import './subMenuInstansi.dart';
-import './subMenuLaporan.dart';
-import './subMenuLokasi.dart';
-import './subMenuMap.dart';
-import './subMenuRak.dart';
-import './subMenuPengembalian.dart';
-import './subMenuPeminjaman.dart';
+import './arsip/subMenuArsip.dart';
+import './baris/subMenuBaris.dart';
+import './box/subMenuBox.dart';
+import './cabang/subMenuCabang.dart';
+import './divisi/subMenuDivisi.dart';
+import './instansi/subMenuInstansi.dart';
+import './laporan/subMenuLaporan.dart';
+import './lokasi/subMenuLokasi.dart';
+import './map/subMenuMap.dart';
+import './rak/subMenuRak.dart';
+import './pengembalian/subMenuPengembalian.dart';
+import './peminjaman/subMenuPeminjaman.dart';
 
 import '../widgets/dashboardScreen/thumbMenu.dart';
 

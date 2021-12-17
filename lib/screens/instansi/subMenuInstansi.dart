@@ -1,9 +1,9 @@
 import './addInstansi.dart';
 
-import '../providers/BodyHeight.dart';
+import '../../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/subMenu/buttonSubMenu.dart';
+import '../../widgets/subMenu/buttonSubMenu.dart';
 import 'package:flutter/material.dart';
 
 class SubMenuInstansi extends StatelessWidget {

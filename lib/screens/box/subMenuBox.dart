@@ -1,12 +1,12 @@
-import 'package:eduarsip/providers/BodyHeight.dart';
-import 'package:eduarsip/screens/addRak.dart';
+import '../../providers/BodyHeight.dart';
+import './addBox.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/subMenu/buttonSubMenu.dart';
+import '../../widgets/subMenu/buttonSubMenu.dart';
 import 'package:flutter/material.dart';
 
-class SubMenuRak extends StatelessWidget {
-  static const routeName = '/submenu_rak';
+class SubMenuBox extends StatelessWidget {
+  static const routeName = '/submenu_box';
 
   @override
   Widget build(BuildContext context) {
@@ -39,16 +39,16 @@ class SubMenuRak extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ButtonSubMenu(
-                title: "Tambah Rak",
+                title: "Tambah Box",
                 onTap: () {
-                  Navigator.of(context).pushNamed(AddRak.routeName);
+                  Navigator.of(context).pushNamed(AddBox.routeName);
                 },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
               ),
               ButtonSubMenu(
-                title: "Data Rak",
+                title: "Data Box",
                 onTap: () {},
               ),
               SizedBox(

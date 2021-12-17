@@ -1,11 +1,13 @@
-import '../providers/BodyHeight.dart';
+import './addDivisi.dart';
+
+import '../../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/subMenu/buttonSubMenu.dart';
+import '../../widgets/subMenu/buttonSubMenu.dart';
 import 'package:flutter/material.dart';
 
-class SubMenuLaporan extends StatelessWidget {
-  static const routeName = '/submenu_laporan';
+class SubMenuDivisi extends StatelessWidget {
+  static const routeName = '/submenu_divisi';
 
   @override
   Widget build(BuildContext context) {
@@ -38,21 +40,23 @@ class SubMenuLaporan extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ButtonSubMenu(
-                title: "Laporan Peminjaman",
+                title: "Tambah Divisi",
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddDivisi.routeName);
+                },
+              ),
+              SizedBox(
+                height: bodyHeight * 0.05,
+              ),
+              ButtonSubMenu(
+                title: "Data Divisi",
                 onTap: () {},
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
               ),
               ButtonSubMenu(
-                title: "Laporan Pengembalian",
-                onTap: () {},
-              ),
-              SizedBox(
-                height: bodyHeight * 0.05,
-              ),
-              ButtonSubMenu(
-                title: "Laporan Arsip",
+                title: "Recycle Bin",
                 onTap: () {},
               ),
             ],

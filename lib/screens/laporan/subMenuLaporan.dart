@@ -1,13 +1,11 @@
-import 'package:eduarsip/screens/addLokasi.dart';
-
-import '../providers/BodyHeight.dart';
+import '../../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
-import '../widgets/subMenu/buttonSubMenu.dart';
+import '../../widgets/subMenu/buttonSubMenu.dart';
 import 'package:flutter/material.dart';
 
-class SubMenuLokasi extends StatelessWidget {
-  static const routeName = '/submenu_lokasi';
+class SubMenuLaporan extends StatelessWidget {
+  static const routeName = '/submenu_laporan';
 
   @override
   Widget build(BuildContext context) {
@@ -40,23 +38,21 @@ class SubMenuLokasi extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               ButtonSubMenu(
-                title: "Tambah Lokasi",
-                onTap: () {
-                  Navigator.of(context).pushNamed(AddLokasi.routeName);
-                },
-              ),
-              SizedBox(
-                height: bodyHeight * 0.05,
-              ),
-              ButtonSubMenu(
-                title: "Data Lokasi",
+                title: "Laporan Peminjaman",
                 onTap: () {},
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
               ),
               ButtonSubMenu(
-                title: "Recycle Bin",
+                title: "Laporan Pengembalian",
+                onTap: () {},
+              ),
+              SizedBox(
+                height: bodyHeight * 0.05,
+              ),
+              ButtonSubMenu(
+                title: "Laporan Arsip",
                 onTap: () {},
               ),
             ],

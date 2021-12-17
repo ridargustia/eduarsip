@@ -1,7 +1,7 @@
 import 'package:dropdown_search/dropdown_search.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_awesome_select/flutter_awesome_select.dart';
-import '../dummyData.dart' as dummy;
+import '../../dummyData.dart' as dummy;
 
 class AddArsip extends StatefulWidget {
   static const routeName = '/add_arsip';
