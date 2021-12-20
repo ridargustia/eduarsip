@@ -56,7 +56,7 @@ final List<Map<String, dynamic>> listPeminjaman = [
   {
     "tgl_peminjaman": "27/12/2021",
     "tgl_pengembalian": "30/12/2021",
-    "nama_arsip": "Berita Acara Bimtek 4",
+    "nama_arsip": "Berita Acara Bimtek 4 Pengelolaan Arsip Dinamis",
     "nama_peminjam": "Ridar Admin",
     "divisi": "IT",
     "cabang": "Yogyakarta",
