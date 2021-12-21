@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import '../../dummyData.dart' as listPeminjaman;
+import '../../dummyData.dart' as listPengembalian;
 
-class ListPeminjaman extends StatelessWidget {
-  static const routeName = '/list_peminjaman';
+class ListPengembalian extends StatelessWidget {
+  static const routeName = '/list_pengembalian';
   @override
   Widget build(BuildContext context) {
     final myAppBar = AppBar(
@@ -47,7 +47,7 @@ class ListPeminjaman extends StatelessWidget {
                 width: double.infinity,
                 alignment: Alignment.center,
                 child: Text(
-                  "Data Peminjaman",
+                  "Data Pengembalian",
                   style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
                 ),
               ),
@@ -62,20 +62,20 @@ class ListPeminjaman extends StatelessWidget {
                   // height: bodyHeight * 0.83,
                   width: double.infinity,
                   child: ListView.separated(
-                    itemCount: listPeminjaman.listPeminjaman.length,
+                    itemCount: listPengembalian.listPengembalian.length,
                     itemBuilder: (context, index) {
-                      // print(listPeminjaman.listPeminjaman[index].toString());
+                      // print(listPengembalian.listPengembalian[index].toString());
                       return ExpansionTile(
                         backgroundColor: Colors.grey.shade300,
                         textColor: Colors.black,
                         iconColor: Colors.grey,
                         title: Text(
-                          "${index + 1}. ${listPeminjaman.listPeminjaman[index]['nama_arsip']}",
+                          "${index + 1}. ${listPengembalian.listPengembalian[index]['nama_arsip']}",
                           maxLines: 1,
                           overflow: TextOverflow.ellipsis,
                         ),
                         // subtitle: Text(
-                        //   "${listPeminjaman.listPeminjaman[index]['tgl_pengembalian']}",
+                        //   "${listPengembalian.listPengembalian[index]['tgl_pengembalian']}",
                         // ),
                         children: [
                           Container(
@@ -93,22 +93,9 @@ class ListPeminjaman extends StatelessWidget {
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
-                                    Text("Tgl Peminjaman"),
+                                    Text("Dikembalikan pada"),
                                     Text(
-                                      "${listPeminjaman.listPeminjaman[index]['tgl_peminjaman']}",
-                                      style: TextStyle(
-                                          fontWeight: FontWeight.bold),
-                                    )
-                                  ],
-                                ),
-                                SizedBox(height: bodyHeight * 0.02),
-                                Row(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
-                                  children: [
-                                    Text("Tgl Pengembalian"),
-                                    Text(
-                                      "${listPeminjaman.listPeminjaman[index]['tgl_pengembalian']}",
+                                      "${listPengembalian.listPengembalian[index]['tgl_kembali']}",
                                       style: TextStyle(
                                           fontWeight: FontWeight.bold),
                                     )
@@ -129,7 +116,7 @@ class ListPeminjaman extends StatelessWidget {
                                       width: MediaQuery.of(context).size.width *
                                           0.4,
                                       child: Text(
-                                        "${listPeminjaman.listPeminjaman[index]['nama_arsip']}",
+                                        "${listPengembalian.listPengembalian[index]['nama_arsip']}",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold),
                                         textAlign: TextAlign.right,
@@ -152,7 +139,7 @@ class ListPeminjaman extends StatelessWidget {
                                       width: MediaQuery.of(context).size.width *
                                           0.4,
                                       child: Text(
-                                        "${listPeminjaman.listPeminjaman[index]['nama_peminjam']}",
+                                        "${listPengembalian.listPengembalian[index]['nama_peminjam']}",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold),
                                         textAlign: TextAlign.right,
@@ -175,7 +162,7 @@ class ListPeminjaman extends StatelessWidget {
                                       width: MediaQuery.of(context).size.width *
                                           0.4,
                                       child: Text(
-                                        "${listPeminjaman.listPeminjaman[index]['divisi']}",
+                                        "${listPengembalian.listPengembalian[index]['divisi']}",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold),
                                         textAlign: TextAlign.right,
@@ -198,7 +185,7 @@ class ListPeminjaman extends StatelessWidget {
                                       width: MediaQuery.of(context).size.width *
                                           0.4,
                                       child: Text(
-                                        "${listPeminjaman.listPeminjaman[index]['cabang']}",
+                                        "${listPengembalian.listPengembalian[index]['cabang']}",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold),
                                         textAlign: TextAlign.right,
@@ -221,7 +208,7 @@ class ListPeminjaman extends StatelessWidget {
                                       width: MediaQuery.of(context).size.width *
                                           0.4,
                                       child: Text(
-                                        "${listPeminjaman.listPeminjaman[index]['instansi']}",
+                                        "${listPengembalian.listPengembalian[index]['instansi']}",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold),
                                         textAlign: TextAlign.right,
@@ -244,7 +231,7 @@ class ListPeminjaman extends StatelessWidget {
                                       width: MediaQuery.of(context).size.width *
                                           0.4,
                                       child: Text(
-                                        "${listPeminjaman.listPeminjaman[index]['created_at']}",
+                                        "${listPengembalian.listPengembalian[index]['created_at']}",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold),
                                         textAlign: TextAlign.right,
@@ -267,7 +254,7 @@ class ListPeminjaman extends StatelessWidget {
                                       width: MediaQuery.of(context).size.width *
                                           0.4,
                                       child: Text(
-                                        "${listPeminjaman.listPeminjaman[index]['created_by']}",
+                                        "${listPengembalian.listPengembalian[index]['created_by']}",
                                         style: TextStyle(
                                             fontWeight: FontWeight.bold),
                                         textAlign: TextAlign.right,

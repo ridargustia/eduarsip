@@ -1,4 +1,5 @@
 import 'package:eduarsip/screens/peminjaman/listPeminjaman.dart';
+import 'package:eduarsip/screens/pengembalian/listPengembalian.dart';
 
 import './screens/divisi/addDivisi.dart';
 import './screens/cabang/addCabang.dart';
@@ -83,6 +84,7 @@ class MyApp extends StatelessWidget {
           AddCabang.routeName: (context) => AddCabang(),
           AddDivisi.routeName: (context) => AddDivisi(),
           ListPeminjaman.routeName: (context) => ListPeminjaman(),
+          ListPengembalian.routeName: (context) => ListPengembalian(),
         },
       ),
     );

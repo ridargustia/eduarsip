@@ -66,6 +66,50 @@ final List<Map<String, dynamic>> listPeminjaman = [
   },
 ];
 
+final List<Map<String, dynamic>> listPengembalian = [
+  //key=String, value=dynamic
+  {
+    "tgl_kembali": "4/12/2021",
+    "nama_arsip": "Berita Acara Bimtek 1",
+    "nama_peminjam": "Ridar Admin",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "4 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+  {
+    "tgl_kembali": "5/12/2021",
+    "nama_arsip": "Berita Acara Bimtek 2",
+    "nama_peminjam": "Ridar Admin",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "1 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+  {
+    "tgl_kembali": "6/12/2021",
+    "nama_arsip": "Berita Acara Bimtek 3",
+    "nama_peminjam": "Ridar Admin",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "4 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+  {
+    "tgl_kembali": "27/12/2021",
+    "nama_arsip": "Berita Acara Bimtek 4 Pengelolaan Arsip Dinamis",
+    "nama_peminjam": "Ridar Admin",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "4 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+];
+
 List<String> images = [
   'assets/images/carousel_banner1.jpg',
   'assets/images/carousel_banner2.jpg',

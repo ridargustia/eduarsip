@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/pengembalian/listPengembalian.dart';
+
 import '../../providers/BodyHeight.dart';
 import './addPengembalian.dart';
 import 'package:provider/provider.dart';
@@ -50,7 +52,9 @@ class SubMenuPengembalian extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Data Pengembalian",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListPengembalian.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
