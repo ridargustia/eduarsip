@@ -1,3 +1,4 @@
+import 'package:eduarsip/screens/arsip/listArsip.dart';
 import 'package:eduarsip/screens/peminjaman/listPeminjaman.dart';
 import 'package:eduarsip/screens/pengembalian/listPengembalian.dart';
 
@@ -85,6 +86,7 @@ class MyApp extends StatelessWidget {
           AddDivisi.routeName: (context) => AddDivisi(),
           ListPeminjaman.routeName: (context) => ListPeminjaman(),
           ListPengembalian.routeName: (context) => ListPengembalian(),
+          ListArsip.routeName: (context) => ListArsip(),
         },
       ),
     );

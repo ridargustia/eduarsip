@@ -110,6 +110,62 @@ final List<Map<String, dynamic>> listPengembalian = [
   },
 ];
 
+final List<Map<String, dynamic>> listArsip = [
+  //key=String, value=dynamic
+  {
+    "no_arsip": "100.1",
+    "nama_arsip": "Berita Acara Bimtek 1",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "status_peminjaman": 1,
+    "status_akses": 3,
+    "status_retensi": 1,
+    "keterangan": 1,
+    "created_at": "4 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+  {
+    "no_arsip": "100.2",
+    "nama_arsip": "Berita Acara Bimtek 2",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "status_peminjaman": 1,
+    "status_akses": 4,
+    "status_retensi": 1,
+    "keterangan": 1,
+    "created_at": "1 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+  {
+    "no_arsip": "101.4",
+    "nama_arsip": "Berita Acara Bimtek 3",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "status_peminjaman": 0,
+    "status_akses": 0,
+    "status_retensi": 1,
+    "keterangan": 1,
+    "created_at": "4 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+  {
+    "no_arsip": "123.10",
+    "nama_arsip": "Berita Acara Bimtek 4 Pengelolaan Arsip Dinamis",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "status_peminjaman": 1,
+    "status_akses": 2,
+    "status_retensi": 0,
+    "keterangan": 1,
+    "created_at": "4 Desember 2021",
+    "created_by": "Ridar Gustia"
+  },
+];
+
 List<String> images = [
   'assets/images/carousel_banner1.jpg',
   'assets/images/carousel_banner2.jpg',
