@@ -1,3 +1,5 @@
+import './listLokasi.dart';
+
 import './addLokasi.dart';
 
 import '../../providers/BodyHeight.dart';
@@ -50,7 +52,9 @@ class SubMenuLokasi extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Data Lokasi",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListLokasi.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,

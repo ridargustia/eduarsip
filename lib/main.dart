@@ -1,3 +1,4 @@
+import './screens/lokasi/listLokasi.dart';
 import './screens/arsip/listArsip.dart';
 import './screens/arsip/listArsipAktif.dart';
 import './screens/arsip/listArsipInaktif.dart';
@@ -99,6 +100,7 @@ class MyApp extends StatelessWidget {
           ListBaris.routeName: (context) => ListBaris(),
           ListBox.routeName: (context) => ListBox(),
           ListMap.routeName: (context) => ListMap(),
+          ListLokasi.routeName: (context) => ListLokasi(),
         },
       ),
     );
