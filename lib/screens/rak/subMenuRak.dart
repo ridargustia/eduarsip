@@ -1,3 +1,4 @@
+import './listRak.dart';
 import '../../providers/BodyHeight.dart';
 import './addRak.dart';
 import 'package:provider/provider.dart';
@@ -49,7 +50,9 @@ class SubMenuRak extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Data Rak",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListRak.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
