@@ -317,6 +317,45 @@ final List<Map<String, dynamic>> listRak = [
   },
 ];
 
+final List<Map<String, dynamic>> listBaris = [
+  //key=String, value=dynamic
+  {
+    "nama_baris": "1",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_baris": "2",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_baris": "3",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_baris": "4",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_baris": "5",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+];
+
 List<String> images = [
   'assets/images/carousel_banner1.jpg',
   'assets/images/carousel_banner2.jpg',

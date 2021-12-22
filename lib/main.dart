@@ -1,6 +1,7 @@
 import 'package:eduarsip/screens/arsip/listArsip.dart';
 import 'package:eduarsip/screens/arsip/listArsipAktif.dart';
 import 'package:eduarsip/screens/arsip/listArsipInaktif.dart';
+import 'package:eduarsip/screens/baris/listBaris.dart';
 import 'package:eduarsip/screens/peminjaman/listPeminjaman.dart';
 import 'package:eduarsip/screens/pengembalian/listPengembalian.dart';
 import 'package:eduarsip/screens/rak/listRak.dart';
@@ -93,6 +94,7 @@ class MyApp extends StatelessWidget {
           ListArsipAktif.routeName: (context) => ListArsipAktif(),
           ListArsipInaktif.routeName: (context) => ListArsipInaktif(),
           ListRak.routeName: (context) => ListRak(),
+          ListBaris.routeName: (context) => ListBaris(),
         },
       ),
     );

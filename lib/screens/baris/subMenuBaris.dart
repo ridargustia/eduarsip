@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/baris/listBaris.dart';
+
 import '../../providers/BodyHeight.dart';
 import './addBaris.dart';
 import 'package:provider/provider.dart';
@@ -49,7 +51,9 @@ class SubMenuBaris extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Data Baris",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListBaris.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
