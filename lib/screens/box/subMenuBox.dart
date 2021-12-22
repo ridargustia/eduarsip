@@ -1,3 +1,5 @@
+import './listBox.dart';
+
 import '../../providers/BodyHeight.dart';
 import './addBox.dart';
 import 'package:provider/provider.dart';
@@ -49,7 +51,9 @@ class SubMenuBox extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Data Box",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListBox.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
