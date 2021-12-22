@@ -416,6 +416,66 @@ final List<Map<String, dynamic>> listBox = [
   },
 ];
 
+final List<Map<String, dynamic>> listMap = [
+  //key=String, value=dynamic
+  {
+    "nama_map": "1",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_map": "2",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_map": "3",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_map": "4",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_map": "5",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_map": "6",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_map": "7",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_map": "8",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2021",
+    "created_by": "Yunita"
+  },
+];
+
 List<String> images = [
   'assets/images/carousel_banner1.jpg',
   'assets/images/carousel_banner2.jpg',

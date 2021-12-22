@@ -1,4 +1,4 @@
-import 'package:eduarsip/screens/baris/listBaris.dart';
+import './listBaris.dart';
 
 import '../../providers/BodyHeight.dart';
 import './addBaris.dart';

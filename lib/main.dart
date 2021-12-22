@@ -1,11 +1,12 @@
-import 'package:eduarsip/screens/arsip/listArsip.dart';
-import 'package:eduarsip/screens/arsip/listArsipAktif.dart';
-import 'package:eduarsip/screens/arsip/listArsipInaktif.dart';
-import 'package:eduarsip/screens/baris/listBaris.dart';
-import 'package:eduarsip/screens/box/listBox.dart';
-import 'package:eduarsip/screens/peminjaman/listPeminjaman.dart';
-import 'package:eduarsip/screens/pengembalian/listPengembalian.dart';
-import 'package:eduarsip/screens/rak/listRak.dart';
+import './screens/arsip/listArsip.dart';
+import './screens/arsip/listArsipAktif.dart';
+import './screens/arsip/listArsipInaktif.dart';
+import './screens/baris/listBaris.dart';
+import './screens/box/listBox.dart';
+import './screens/map/listMap.dart';
+import './screens/peminjaman/listPeminjaman.dart';
+import './screens/pengembalian/listPengembalian.dart';
+import './screens/rak/listRak.dart';
 
 import './screens/divisi/addDivisi.dart';
 import './screens/cabang/addCabang.dart';
@@ -97,6 +98,7 @@ class MyApp extends StatelessWidget {
           ListRak.routeName: (context) => ListRak(),
           ListBaris.routeName: (context) => ListBaris(),
           ListBox.routeName: (context) => ListBox(),
+          ListMap.routeName: (context) => ListMap(),
         },
       ),
     );

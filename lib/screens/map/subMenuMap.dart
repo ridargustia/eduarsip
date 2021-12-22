@@ -1,3 +1,5 @@
+import './listMap.dart';
+
 import './addMap.dart';
 
 import '../../providers/BodyHeight.dart';
@@ -50,7 +52,9 @@ class SubMenuMap extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Data Map",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListMap.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
