@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../../dummyData.dart' as listArsip;
+import '../../dummyData.dart' as listArsipAktif;
 import 'package:badges/badges.dart';
 
-class ListArsip extends StatelessWidget {
-  static const routeName = '/list_arsip';
+class ListArsipAktif extends StatelessWidget {
+  static const routeName = '/list_arsip_aktif';
   @override
   Widget build(BuildContext context) {
     final myAppBar = AppBar(
@@ -49,7 +49,7 @@ class ListArsip extends StatelessWidget {
               width: double.infinity,
               alignment: Alignment.center,
               child: Text(
-                "Data Arsip",
+                "Data Arsip Aktif",
                 style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
               ),
             ),
@@ -60,20 +60,20 @@ class ListArsip extends StatelessWidget {
             ),
             Expanded(
               child: ListView.separated(
-                itemCount: listArsip.listArsip.length,
+                itemCount: listArsipAktif.listArsipAktif.length,
                 itemBuilder: (context, index) {
-                  // print(listArsip.listArsip[index].toString());
+                  // print(listArsipAktif.listArsipAktif[index].toString());
                   return ExpansionTile(
                     backgroundColor: Colors.grey.shade300,
                     textColor: Colors.black,
                     iconColor: Colors.grey,
                     title: Text(
-                      "${index + 1}. ${listArsip.listArsip[index]['nama_arsip']}",
+                      "${index + 1}. ${listArsipAktif.listArsipAktif[index]['nama_arsip']}",
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis,
                     ),
                     // subtitle: Text(
-                    //   "${listArsip.listArsip[index]['tgl_pengembalian']}",
+                    //   "${listArsipAktif.listArsipAktif[index]['tgl_pengembalian']}",
                     // ),
                     children: [
                       Container(
@@ -92,7 +92,7 @@ class ListArsip extends StatelessWidget {
                               children: [
                                 Text("No Arsip"),
                                 Text(
-                                  "${listArsip.listArsip[index]['no_arsip']}",
+                                  "${listArsipAktif.listArsipAktif[index]['no_arsip']}",
                                   style: TextStyle(fontWeight: FontWeight.bold),
                                 )
                               ],
@@ -111,7 +111,7 @@ class ListArsip extends StatelessWidget {
                                   width:
                                       MediaQuery.of(context).size.width * 0.4,
                                   child: Text(
-                                    "${listArsip.listArsip[index]['nama_arsip']}",
+                                    "${listArsipAktif.listArsipAktif[index]['nama_arsip']}",
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),
                                     textAlign: TextAlign.right,
@@ -133,7 +133,7 @@ class ListArsip extends StatelessWidget {
                                   width:
                                       MediaQuery.of(context).size.width * 0.4,
                                   child: Text(
-                                    "${listArsip.listArsip[index]['divisi']}",
+                                    "${listArsipAktif.listArsipAktif[index]['divisi']}",
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),
                                     textAlign: TextAlign.right,
@@ -155,7 +155,7 @@ class ListArsip extends StatelessWidget {
                                   width:
                                       MediaQuery.of(context).size.width * 0.4,
                                   child: Text(
-                                    "${listArsip.listArsip[index]['cabang']}",
+                                    "${listArsipAktif.listArsipAktif[index]['cabang']}",
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),
                                     textAlign: TextAlign.right,
@@ -177,7 +177,7 @@ class ListArsip extends StatelessWidget {
                                   width:
                                       MediaQuery.of(context).size.width * 0.4,
                                   child: Text(
-                                    "${listArsip.listArsip[index]['instansi']}",
+                                    "${listArsipAktif.listArsipAktif[index]['instansi']}",
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),
                                     textAlign: TextAlign.right,
@@ -200,7 +200,7 @@ class ListArsip extends StatelessWidget {
                                       MediaQuery.of(context).size.width * 0.4,
                                   child: Padding(
                                     padding: EdgeInsets.only(left: 70),
-                                    child: (listArsip.listArsip[index]
+                                    child: (listArsipAktif.listArsipAktif[index]
                                                 ['status_peminjaman'] ==
                                             1)
                                         ? Badge(
@@ -258,7 +258,7 @@ class ListArsip extends StatelessWidget {
                                       MediaQuery.of(context).size.width * 0.4,
                                   child: Padding(
                                     padding: EdgeInsets.only(left: 70),
-                                    child: (listArsip.listArsip[index]
+                                    child: (listArsipAktif.listArsipAktif[index]
                                                 ['status_akses'] ==
                                             0)
                                         ? Badge(
@@ -279,7 +279,7 @@ class ListArsip extends StatelessWidget {
                                               textAlign: TextAlign.center,
                                             ),
                                           )
-                                        : (listArsip.listArsip[index]
+                                        : (listArsipAktif.listArsipAktif[index]
                                                     ['status_akses'] ==
                                                 1)
                                             ? Badge(
@@ -300,7 +300,8 @@ class ListArsip extends StatelessWidget {
                                                   textAlign: TextAlign.center,
                                                 ),
                                               )
-                                            : (listArsip.listArsip[index]
+                                            : (listArsipAktif.listArsipAktif[
+                                                            index]
                                                         ['status_akses'] ==
                                                     2)
                                                 ? Badge(
@@ -323,7 +324,8 @@ class ListArsip extends StatelessWidget {
                                                           TextAlign.center,
                                                     ),
                                                   )
-                                                : (listArsip.listArsip[index]
+                                                : (listArsipAktif.listArsipAktif[
+                                                                index]
                                                             ['status_akses'] ==
                                                         3)
                                                     ? Badge(
@@ -391,7 +393,7 @@ class ListArsip extends StatelessWidget {
                                       MediaQuery.of(context).size.width * 0.4,
                                   child: Padding(
                                     padding: EdgeInsets.only(left: 70),
-                                    child: (listArsip.listArsip[index]
+                                    child: (listArsipAktif.listArsipAktif[index]
                                                 ['status_retensi'] ==
                                             1)
                                         ? Badge(
@@ -448,7 +450,8 @@ class ListArsip extends StatelessWidget {
                                   width:
                                       MediaQuery.of(context).size.width * 0.4,
                                   child: Text(
-                                    (listArsip.listArsip[index]['keterangan'] ==
+                                    (listArsipAktif.listArsipAktif[index]
+                                                ['keterangan'] ==
                                             1)
                                         ? "Permanen"
                                         : "Musnah",
@@ -473,7 +476,7 @@ class ListArsip extends StatelessWidget {
                                   width:
                                       MediaQuery.of(context).size.width * 0.4,
                                   child: Text(
-                                    "${listArsip.listArsip[index]['created_at']}",
+                                    "${listArsipAktif.listArsipAktif[index]['created_at']}",
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),
                                     textAlign: TextAlign.right,
@@ -495,7 +498,7 @@ class ListArsip extends StatelessWidget {
                                   width:
                                       MediaQuery.of(context).size.width * 0.4,
                                   child: Text(
-                                    "${listArsip.listArsip[index]['created_by']}",
+                                    "${listArsipAktif.listArsipAktif[index]['created_by']}",
                                     style:
                                         TextStyle(fontWeight: FontWeight.bold),
                                     textAlign: TextAlign.right,

@@ -1,4 +1,6 @@
 import 'package:eduarsip/screens/arsip/listArsip.dart';
+import 'package:eduarsip/screens/arsip/listArsipAktif.dart';
+import 'package:eduarsip/screens/arsip/listArsipInaktif.dart';
 import 'package:eduarsip/screens/peminjaman/listPeminjaman.dart';
 import 'package:eduarsip/screens/pengembalian/listPengembalian.dart';
 
@@ -87,6 +89,8 @@ class MyApp extends StatelessWidget {
           ListPeminjaman.routeName: (context) => ListPeminjaman(),
           ListPengembalian.routeName: (context) => ListPengembalian(),
           ListArsip.routeName: (context) => ListArsip(),
+          ListArsipAktif.routeName: (context) => ListArsipAktif(),
+          ListArsipInaktif.routeName: (context) => ListArsipInaktif(),
         },
       ),
     );

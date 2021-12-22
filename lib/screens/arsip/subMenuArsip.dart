@@ -1,4 +1,6 @@
-import 'package:eduarsip/screens/arsip/listArsip.dart';
+import './listArsip.dart';
+import './listArsipAktif.dart';
+import './listArsipInaktif.dart';
 
 import '../../providers/BodyHeight.dart';
 import './addArsip.dart';
@@ -61,14 +63,18 @@ class SubMenuArsip extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Data Arsip Aktif",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListArsipAktif.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
               ),
               ButtonSubMenu(
                 title: "Data Arsip Inaktif",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListArsipInaktif.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
