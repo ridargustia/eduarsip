@@ -494,6 +494,46 @@ final List<Map<String, dynamic>> listLokasi = [
   },
 ];
 
+final List<Map<String, dynamic>> listInstansi = [
+  //key=String, value=dynamic
+  {
+    "nama_instansi": "EduArsip",
+    "alamat": "Gamping, Sleman, Yogyakarta",
+    "no_telpon": "081262215939",
+    "masa_aktif": "23 Februari 2090",
+    "is_active": 1,
+    "created_at": "21 Desember 2019",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_instansi": "KSPPS BMT Bina Ummah",
+    "alamat": "Godean, Sleman, Yogyakarta",
+    "no_telpon": "081262215939",
+    "masa_aktif": "23 Juli 2029",
+    "is_active": 1,
+    "created_at": "21 Desember 2019",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_instansi": "BMT Artha Amanah Sanden",
+    "alamat": "Sanden, Bantul, Yogyakarta",
+    "no_telpon": "081262215939",
+    "masa_aktif": "23 November 2025",
+    "is_active": 1,
+    "created_at": "21 Desember 2019",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_instansi": "KSPPS BHAPEDES",
+    "alamat": "Kangean, Jawa Timur",
+    "no_telpon": "081262215939",
+    "masa_aktif": "21 Maret 2023",
+    "is_active": 1,
+    "created_at": "21 Desember 2019",
+    "created_by": "Yunita"
+  },
+];
+
 List<String> images = [
   'assets/images/carousel_banner1.jpg',
   'assets/images/carousel_banner2.jpg',

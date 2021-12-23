@@ -64,6 +64,7 @@ flutter:
     - assets/images/carousel_banner3.jpg
     - assets/images/carousel_banner4.jpg
     - assets/images/carousel_banner5.jpg
+    - assets/images/noimage.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
