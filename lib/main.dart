@@ -1,3 +1,4 @@
+import './screens/divisi/listDivisi.dart';
 import './screens/cabang/listCabang.dart';
 import './screens/instansi/listInstansi.dart';
 import './screens/lokasi/listLokasi.dart';
@@ -105,6 +106,7 @@ class MyApp extends StatelessWidget {
           ListLokasi.routeName: (context) => ListLokasi(),
           ListInstansi.routeName: (context) => ListInstansi(),
           ListCabang.routeName: (context) => ListCabang(),
+          ListDivisi.routeName: (context) => ListDivisi(),
         },
       ),
     );

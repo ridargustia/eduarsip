@@ -1,3 +1,5 @@
+import './listDivisi.dart';
+
 import './addDivisi.dart';
 
 import '../../providers/BodyHeight.dart';
@@ -50,7 +52,9 @@ class SubMenuDivisi extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Data Divisi",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListDivisi.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
