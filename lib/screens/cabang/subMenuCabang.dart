@@ -1,3 +1,5 @@
+import './listCabang.dart';
+
 import './addCabang.dart';
 
 import '../../providers/BodyHeight.dart';
@@ -50,7 +52,9 @@ class SubMenuCabang extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Data Cabang",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListCabang.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,

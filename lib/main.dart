@@ -1,5 +1,5 @@
-import 'package:eduarsip/screens/instansi/listInstansi.dart';
-
+import './screens/cabang/listCabang.dart';
+import './screens/instansi/listInstansi.dart';
 import './screens/lokasi/listLokasi.dart';
 import './screens/arsip/listArsip.dart';
 import './screens/arsip/listArsipAktif.dart';
@@ -104,6 +104,7 @@ class MyApp extends StatelessWidget {
           ListMap.routeName: (context) => ListMap(),
           ListLokasi.routeName: (context) => ListLokasi(),
           ListInstansi.routeName: (context) => ListInstansi(),
+          ListCabang.routeName: (context) => ListCabang(),
         },
       ),
     );

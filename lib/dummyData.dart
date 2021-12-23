@@ -534,6 +534,28 @@ final List<Map<String, dynamic>> listInstansi = [
   },
 ];
 
+final List<Map<String, dynamic>> listCabang = [
+  //key=String, value=dynamic
+  {
+    "nama_cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2019",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_cabang": "Semarang",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2019",
+    "created_by": "Yunita"
+  },
+  {
+    "nama_cabang": "Bantul",
+    "instansi": "EduArsip",
+    "created_at": "21 Desember 2019",
+    "created_by": "Yunita"
+  },
+];
+
 List<String> images = [
   'assets/images/carousel_banner1.jpg',
   'assets/images/carousel_banner2.jpg',
