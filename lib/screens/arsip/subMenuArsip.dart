@@ -1,3 +1,5 @@
+import './recyclebinArsip.dart';
+
 import './listArsip.dart';
 import './listArsipAktif.dart';
 import './listArsipInaktif.dart';
@@ -81,7 +83,9 @@ class SubMenuArsip extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Recycle Bin",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(RecyclebinArsip.routeName);
+                },
               ),
             ],
           ),
