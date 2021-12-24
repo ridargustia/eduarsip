@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/peminjaman/recyclebinPeminjaman.dart';
+
 import './listPeminjaman.dart';
 
 import '../../providers/BodyHeight.dart';
@@ -60,7 +62,10 @@ class SubMenuPeminjaman extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Recycle Bin",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context)
+                      .pushNamed(RecyclebinPeminjaman.routeName);
+                },
               ),
             ],
           ),
