@@ -1,3 +1,4 @@
+import './screens/rak/recyclebinRak.dart';
 import './screens/arsip/recyclebinArsip.dart';
 import './screens/peminjaman/recyclebinPeminjaman.dart';
 import './screens/pengembalian/recyclebinPengembalian.dart';
@@ -114,6 +115,7 @@ class MyApp extends StatelessWidget {
           RecyclebinPengembalian.routeName: (context) =>
               RecyclebinPengembalian(),
           RecyclebinArsip.routeName: (context) => RecyclebinArsip(),
+          RecyclebinRak.routeName: (context) => RecyclebinRak(),
         },
       ),
     );

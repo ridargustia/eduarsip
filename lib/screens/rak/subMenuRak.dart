@@ -1,3 +1,4 @@
+import './recyclebinRak.dart';
 import './listRak.dart';
 import '../../providers/BodyHeight.dart';
 import './addRak.dart';
@@ -59,7 +60,9 @@ class SubMenuRak extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Recycle Bin",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(RecyclebinRak.routeName);
+                },
               ),
             ],
           ),
