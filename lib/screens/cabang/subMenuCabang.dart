@@ -1,3 +1,5 @@
+import './recyclebinCabang.dart';
+
 import './listCabang.dart';
 
 import './addCabang.dart';
@@ -61,7 +63,9 @@ class SubMenuCabang extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Recycle Bin",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(RecyclebinCabang.routeName);
+                },
               ),
             ],
           ),

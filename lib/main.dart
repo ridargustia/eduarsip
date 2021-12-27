@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/cabang/recyclebinCabang.dart';
+
 import './screens/instansi/recyclebinInstansi.dart';
 import './screens/lokasi/recyclebinLokasi.dart';
 import './screens/map/recyclebinMap.dart';
@@ -126,6 +128,7 @@ class MyApp extends StatelessWidget {
           RecyclebinMap.routeName: (context) => RecyclebinMap(),
           RecyclebinLokasi.routeName: (context) => RecyclebinLokasi(),
           RecyclebinInstansi.routeName: (context) => RecyclebinInstansi(),
+          RecyclebinCabang.routeName: (context) => RecyclebinCabang(),
         },
       ),
     );
