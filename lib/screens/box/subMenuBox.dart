@@ -1,3 +1,5 @@
+import './recyclebinBox.dart';
+
 import './listBox.dart';
 
 import '../../providers/BodyHeight.dart';
@@ -60,7 +62,9 @@ class SubMenuBox extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Recycle Bin",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(RecyclebinBox.routeName);
+                },
               ),
             ],
           ),
