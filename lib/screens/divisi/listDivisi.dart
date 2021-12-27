@@ -1,3 +1,4 @@
+import '../../widgets/searchInList/searchForm.dart';
 import 'package:flutter/material.dart';
 import '../../dummyData.dart' as listDivisi;
 
@@ -39,6 +40,15 @@ class ListDivisi extends StatelessWidget {
                 "Data Divisi",
                 style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
               ),
+            ),
+            Divider(
+              color: Colors.grey.shade300,
+              thickness: 3,
+              height: 5,
+            ),
+            SearchForm(
+              bodyHeight: bodyHeight,
+              hintText: "Cari Divisi",
             ),
             Divider(
               color: Colors.grey.shade300,
