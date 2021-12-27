@@ -1,3 +1,5 @@
+import './recyclebinInstansi.dart';
+
 import './listInstansi.dart';
 
 import './addInstansi.dart';
@@ -61,7 +63,9 @@ class SubMenuInstansi extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Recycle Bin",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(RecyclebinInstansi.routeName);
+                },
               ),
             ],
           ),
