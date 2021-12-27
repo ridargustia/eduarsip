@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/divisi/recyclebinDivisi.dart';
+
 import './listDivisi.dart';
 
 import './addDivisi.dart';
@@ -61,7 +63,9 @@ class SubMenuDivisi extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Recycle Bin",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(RecyclebinDivisi.routeName);
+                },
               ),
             ],
           ),
