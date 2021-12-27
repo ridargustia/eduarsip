@@ -1,3 +1,5 @@
+import './recyclebinMap.dart';
+
 import './listMap.dart';
 
 import './addMap.dart';
@@ -61,7 +63,9 @@ class SubMenuMap extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Recycle Bin",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(RecyclebinMap.routeName);
+                },
               ),
             ],
           ),
