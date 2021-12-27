@@ -1,3 +1,4 @@
+import './screens/lokasi/recyclebinLokasi.dart';
 import './screens/map/recyclebinMap.dart';
 import './screens/box/recyclebinBox.dart';
 import './screens/baris/recyclebinBaris.dart';
@@ -122,6 +123,7 @@ class MyApp extends StatelessWidget {
           RecyclebinBaris.routeName: (context) => RecyclebinBaris(),
           RecyclebinBox.routeName: (context) => RecyclebinBox(),
           RecyclebinMap.routeName: (context) => RecyclebinMap(),
+          RecyclebinLokasi.routeName: (context) => RecyclebinLokasi(),
         },
       ),
     );

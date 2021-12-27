@@ -1,3 +1,5 @@
+import './recyclebinLokasi.dart';
+
 import './listLokasi.dart';
 
 import './addLokasi.dart';
@@ -61,7 +63,9 @@ class SubMenuLokasi extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Recycle Bin",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(RecyclebinLokasi.routeName);
+                },
               ),
             ],
           ),
