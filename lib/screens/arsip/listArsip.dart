@@ -1,3 +1,4 @@
+import '../../widgets/searchInList/searchForm.dart';
 import 'package:flutter/material.dart';
 import '../../dummyData.dart' as listArsip;
 import 'package:badges/badges.dart';
@@ -52,6 +53,15 @@ class ListArsip extends StatelessWidget {
                 "Data Arsip",
                 style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
               ),
+            ),
+            Divider(
+              color: Colors.grey.shade300,
+              thickness: 3,
+              height: 5,
+            ),
+            SearchForm(
+              bodyHeight: bodyHeight,
+              hintText: "Cari Arsip",
             ),
             Divider(
               color: Colors.grey.shade300,

@@ -1,3 +1,4 @@
+import '../../widgets/searchInList/searchForm.dart';
 import 'package:flutter/material.dart';
 import '../../dummyData.dart' as listBox;
 
@@ -39,6 +40,15 @@ class ListBox extends StatelessWidget {
                 "Data Box",
                 style: TextStyle(fontSize: 17, fontWeight: FontWeight.bold),
               ),
+            ),
+            Divider(
+              color: Colors.grey.shade300,
+              thickness: 3,
+              height: 5,
+            ),
+            SearchForm(
+              bodyHeight: bodyHeight,
+              hintText: "Cari Box",
             ),
             Divider(
               color: Colors.grey.shade300,
