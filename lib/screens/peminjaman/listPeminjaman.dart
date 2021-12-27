@@ -1,4 +1,4 @@
-import 'package:eduarsip/widgets/searchInList/searchForm.dart';
+import '../../widgets/searchInList/searchForm.dart';
 import 'package:flutter/material.dart';
 import '../../dummyData.dart' as listPeminjaman;
 
