@@ -5,13 +5,12 @@ class MenuBox extends StatelessWidget {
   final Widget? icon;
   final Widget menu;
   final Function()? onTap;
-  const MenuBox({
-    Key? key,
+  MenuBox({
     required this.menu,
     this.padding = const EdgeInsets.all(10),
     this.icon,
     this.onTap,
-  }) : super(key: key);
+  });
 
   @override
   Widget build(BuildContext context) {

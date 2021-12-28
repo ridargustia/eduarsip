@@ -1,3 +1,5 @@
+import '../../screens/user/subMenuUser.dart';
+
 import './menuBox.dart';
 import 'package:flutter/material.dart';
 
@@ -85,6 +87,9 @@ class CustomDrawer extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              onTap: () {
+                Navigator.of(context).pushNamed(SubMenuUser.routeName);
+              },
             ),
             MenuBox(
               padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 15),

@@ -1,6 +1,6 @@
-import 'package:eduarsip/screens/cabang/recyclebinCabang.dart';
-import 'package:eduarsip/screens/divisi/recyclebinDivisi.dart';
-
+import './screens/cabang/recyclebinCabang.dart';
+import './screens/divisi/recyclebinDivisi.dart';
+import './screens/user/subMenuUser.dart';
 import './screens/instansi/recyclebinInstansi.dart';
 import './screens/lokasi/recyclebinLokasi.dart';
 import './screens/map/recyclebinMap.dart';
@@ -95,6 +95,7 @@ class MyApp extends StatelessWidget {
           SubMenuInstansi.routeName: (context) => SubMenuInstansi(),
           SubMenuCabang.routeName: (context) => SubMenuCabang(),
           SubMenuDivisi.routeName: (context) => SubMenuDivisi(),
+          SubMenuUser.routeName: (context) => SubMenuUser(),
           AddPeminjaman.routeName: (context) => AddPeminjaman(),
           AddPengembalian.routeName: (context) => AddPengembalian(),
           AddArsip.routeName: (context) => AddArsip(),
