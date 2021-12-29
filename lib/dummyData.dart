@@ -606,6 +606,16 @@ List<S2Choice<String>> jenisArsip = [
 ];
 List<String>? selected_jenisArsip = [];
 
+//Checkbox Akses Data User
+List<S2Choice<String>> aksesData = [
+  S2Choice<String>(value: '1', title: 'Read'),
+  S2Choice<String>(value: '2', title: 'Create'),
+  S2Choice<String>(value: '3', title: 'Update'),
+  S2Choice<String>(value: '4', title: 'Delete'),
+  S2Choice<String>(value: '5', title: 'Restore'),
+];
+List<String>? selected_aksesData = [];
+
 //Radio button status akses file
 String? selected_statusAksesFile;
 List<S2Choice<String>> statusAksesFile = [

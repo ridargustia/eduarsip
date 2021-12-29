@@ -1,3 +1,5 @@
+import './addUser.dart';
+
 import '../../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
@@ -39,7 +41,9 @@ class SubMenuUser extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Add User",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(AddUser.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,

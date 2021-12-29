@@ -684,66 +684,6 @@ class _AddArsipState extends State<AddArsip> {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Deskripsi",
-                    style: TextStyle(
-                      fontSize: 13,
-                      // color: Colors.grey,
-                      fontFamily: 'Poppins',
-                    ),
-                  ),
-                  Container(
-                    width: MediaQuery.of(context).size.width,
-                    margin: EdgeInsets.only(top: 5),
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.all(Radius.circular(10)),
-                      boxShadow: [
-                        BoxShadow(
-                          color: Colors.grey.shade300,
-                          blurRadius: 5,
-                          offset: Offset(2, 4),
-                          spreadRadius: 2,
-                        ),
-                      ],
-                    ),
-                    child: TextField(
-                      maxLines: 4,
-                      keyboardType: TextInputType.multiline,
-                      // controller: TextEditingController(
-                      //   text:
-                      //       "${_selectDatePeminjaman.toLocal()}".split(' ')[0],
-                      // ),
-                      style: TextStyle(
-                        fontSize: 15,
-                        fontFamily: 'Poppins',
-                        fontWeight: FontWeight.bold,
-                      ),
-                      obscureText: false,
-                      decoration: InputDecoration(
-                        hintText: "Masukkan deskripsi Arsip..",
-                        hintStyle: TextStyle(
-                          fontFamily: 'Poppins',
-                          color: Colors.grey.shade400,
-                        ),
-                        contentPadding:
-                            EdgeInsets.symmetric(vertical: 10, horizontal: 20),
-                        border: OutlineInputBorder(
-                          // borderSide: BorderSide(),
-                          borderRadius: BorderRadius.all(
-                            Radius.circular(10),
-                          ),
-                        ),
-                        fillColor: Colors.white,
-                        filled: true,
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-              SizedBox(height: bodyHeight * 0.03),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
                     "Deskripsi Arsip",
                     style: TextStyle(
                       fontSize: 13,

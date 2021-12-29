@@ -1,3 +1,4 @@
+import './screens/user/addUser.dart';
 import './screens/cabang/recyclebinCabang.dart';
 import './screens/divisi/recyclebinDivisi.dart';
 import './screens/user/subMenuUser.dart';
@@ -107,6 +108,7 @@ class MyApp extends StatelessWidget {
           AddInstansi.routeName: (context) => AddInstansi(),
           AddCabang.routeName: (context) => AddCabang(),
           AddDivisi.routeName: (context) => AddDivisi(),
+          AddUser.routeName: (context) => AddUser(),
           ListPeminjaman.routeName: (context) => ListPeminjaman(),
           ListPengembalian.routeName: (context) => ListPengembalian(),
           ListArsip.routeName: (context) => ListArsip(),
