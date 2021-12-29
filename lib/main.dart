@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/user/listUser.dart';
+
 import './screens/user/addUser.dart';
 import './screens/cabang/recyclebinCabang.dart';
 import './screens/divisi/recyclebinDivisi.dart';
@@ -122,6 +124,7 @@ class MyApp extends StatelessWidget {
           ListInstansi.routeName: (context) => ListInstansi(),
           ListCabang.routeName: (context) => ListCabang(),
           ListDivisi.routeName: (context) => ListDivisi(),
+          ListUser.routeName: (context) => ListUser(),
           RecyclebinPeminjaman.routeName: (context) => RecyclebinPeminjaman(),
           RecyclebinPengembalian.routeName: (context) =>
               RecyclebinPengembalian(),

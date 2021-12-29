@@ -588,6 +588,58 @@ final List<Map<String, dynamic>> listDivisi = [
   },
 ];
 
+final List<Map<String, dynamic>> listUser = [
+  //key=String, value=dynamic
+  {
+    "name": "Ridar Gustia Priatama",
+    "username": "ridargustia",
+    "email": "ridargp@gmail.com",
+    "divisi": "IT",
+    "cabang": "Yogyakarta",
+    "instansi": "EduArsip",
+    "usertype": 5,
+    "is_active": 1,
+    "created_at": "21 Desember 2019",
+    "created_by": "Yunita"
+  },
+  {
+    "name": "Roy Riski R",
+    "username": "royriski",
+    "email": "royriski@gmail.com",
+    "divisi": "Keuangan",
+    "cabang": "Yogyakarta",
+    "instansi": "PBMT Taawun",
+    "usertype": 2,
+    "is_active": 1,
+    "created_at": "21 Desember 2019",
+    "created_by": "ridargustia"
+  },
+  {
+    "name": "Rosi Risprio",
+    "username": "rosirisprio",
+    "email": "rosirisprio@gmail.com",
+    "divisi": "Administrator",
+    "cabang": "Yogyakarta",
+    "instansi": "PBMT Maal Pusat",
+    "usertype": 3,
+    "is_active": 1,
+    "created_at": "21 Desember 2019",
+    "created_by": "ridargustia"
+  },
+  {
+    "name": "Adam Putra Pratama",
+    "username": "adamputra",
+    "email": "adamputra@gmail.com",
+    "divisi": "SE",
+    "cabang": "Yogyakarta",
+    "instansi": "PBMT Maal MPW DIY",
+    "usertype": 4,
+    "is_active": 0,
+    "created_at": "21 Desember 2019",
+    "created_by": "Yunita"
+  },
+];
+
 List<String> images = [
   'assets/images/carousel_banner1.jpg',
   'assets/images/carousel_banner2.jpg',

@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/user/listUser.dart';
+
 import './addUser.dart';
 
 import '../../providers/BodyHeight.dart';
@@ -50,7 +52,9 @@ class SubMenuUser extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "User List",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(ListUser.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
