@@ -1,4 +1,5 @@
-import 'package:eduarsip/screens/user/listUser.dart';
+import './listUser.dart';
+import './recyclebinUser.dart';
 
 import './addUser.dart';
 
@@ -61,7 +62,9 @@ class SubMenuUser extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Recycle Bin",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(RecyclebinUser.routeName);
+                },
               ),
             ],
           ),
