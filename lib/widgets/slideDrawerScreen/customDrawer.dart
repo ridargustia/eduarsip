@@ -1,3 +1,4 @@
+import 'package:eduarsip/screens/user/changePasswordUser.dart';
 import 'package:eduarsip/screens/user/editProfileUser.dart';
 
 import '../../screens/user/subMenuUser.dart';
@@ -151,6 +152,9 @@ class CustomDrawer extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              onTap: () {
+                Navigator.of(context).pushNamed(ChangePasswordUser.routeName);
+              },
             ),
             MenuBox(
               padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 15),

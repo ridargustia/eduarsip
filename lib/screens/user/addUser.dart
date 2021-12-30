@@ -675,7 +675,7 @@ class _AddUserState extends State<AddUser> {
                                       fontFamily: 'Poppins',
                                       fontWeight: FontWeight.bold,
                                     ),
-                                    obscureText: false,
+                                    obscureText: true,
                                     decoration: InputDecoration(
                                       // hintText: "Input Full Name",
                                       // hintStyle: TextStyle(
@@ -733,7 +733,7 @@ class _AddUserState extends State<AddUser> {
                                       fontFamily: 'Poppins',
                                       fontWeight: FontWeight.bold,
                                     ),
-                                    obscureText: false,
+                                    obscureText: true,
                                     decoration: InputDecoration(
                                       // hintText: "Input Full Name",
                                       // hintStyle: TextStyle(

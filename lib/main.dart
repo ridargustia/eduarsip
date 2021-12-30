@@ -1,3 +1,4 @@
+import 'package:eduarsip/screens/user/changePasswordUser.dart';
 import 'package:eduarsip/screens/user/editProfileUser.dart';
 import 'package:eduarsip/screens/user/listUser.dart';
 import 'package:eduarsip/screens/user/recyclebinUser.dart';
@@ -141,6 +142,7 @@ class MyApp extends StatelessWidget {
           RecyclebinDivisi.routeName: (context) => RecyclebinDivisi(),
           RecyclebinUser.routeName: (context) => RecyclebinUser(),
           EditProfileUser.routeName: (context) => EditProfileUser(),
+          ChangePasswordUser.routeName: (context) => ChangePasswordUser(),
         },
       ),
     );
