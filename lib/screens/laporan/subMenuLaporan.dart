@@ -1,3 +1,5 @@
+import './laporanPeminjaman.dart';
+
 import '../../providers/BodyHeight.dart';
 import 'package:provider/provider.dart';
 
@@ -39,7 +41,9 @@ class SubMenuLaporan extends StatelessWidget {
             children: [
               ButtonSubMenu(
                 title: "Laporan Peminjaman",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(LaporanPeminjaman.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,

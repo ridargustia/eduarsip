@@ -1,8 +1,8 @@
-import 'package:eduarsip/screens/user/changePasswordUser.dart';
-import 'package:eduarsip/screens/user/editProfileUser.dart';
-import 'package:eduarsip/screens/user/listUser.dart';
-import 'package:eduarsip/screens/user/recyclebinUser.dart';
-
+import './screens/laporan/laporanPeminjaman.dart';
+import './screens/user/changePasswordUser.dart';
+import './screens/user/editProfileUser.dart';
+import './screens/user/listUser.dart';
+import './screens/user/recyclebinUser.dart';
 import './screens/user/addUser.dart';
 import './screens/cabang/recyclebinCabang.dart';
 import './screens/divisi/recyclebinDivisi.dart';
@@ -143,6 +143,7 @@ class MyApp extends StatelessWidget {
           RecyclebinUser.routeName: (context) => RecyclebinUser(),
           EditProfileUser.routeName: (context) => EditProfileUser(),
           ChangePasswordUser.routeName: (context) => ChangePasswordUser(),
+          LaporanPeminjaman.routeName: (context) => LaporanPeminjaman(),
         },
       ),
     );
