@@ -1,3 +1,4 @@
+import 'package:eduarsip/screens/user/editProfileUser.dart';
 import 'package:eduarsip/screens/user/listUser.dart';
 import 'package:eduarsip/screens/user/recyclebinUser.dart';
 
@@ -139,6 +140,7 @@ class MyApp extends StatelessWidget {
           RecyclebinCabang.routeName: (context) => RecyclebinCabang(),
           RecyclebinDivisi.routeName: (context) => RecyclebinDivisi(),
           RecyclebinUser.routeName: (context) => RecyclebinUser(),
+          EditProfileUser.routeName: (context) => EditProfileUser(),
         },
       ),
     );

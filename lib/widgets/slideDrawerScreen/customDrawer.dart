@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/user/editProfileUser.dart';
+
 import '../../screens/user/subMenuUser.dart';
 
 import './menuBox.dart';
@@ -60,20 +62,20 @@ class CustomDrawer extends StatelessWidget {
             _thumbnailPart(),
             SizedBox(height: 20),
             _line,
-            MenuBox(
-              padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 15),
-              icon: Icon(
-                Icons.apartment,
-                color: Colors.white,
-              ),
-              menu: Text(
-                "Company Profile",
-                style: TextStyle(
-                  fontSize: 17,
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            // MenuBox(
+            //   padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 15),
+            //   icon: Icon(
+            //     Icons.apartment,
+            //     color: Colors.white,
+            //   ),
+            //   menu: Text(
+            //     "Company Profile",
+            //     style: TextStyle(
+            //       fontSize: 17,
+            //       color: Colors.white,
+            //     ),
+            //   ),
+            // ),
             MenuBox(
               padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 15),
               icon: Icon(
@@ -105,20 +107,20 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ),
             ),
-            MenuBox(
-              padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 15),
-              icon: Icon(
-                Icons.watch_later,
-                color: Colors.white,
-              ),
-              menu: Text(
-                "Log System",
-                style: TextStyle(
-                  fontSize: 17,
-                  color: Colors.white,
-                ),
-              ),
-            ),
+            // MenuBox(
+            //   padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 15),
+            //   icon: Icon(
+            //     Icons.watch_later,
+            //     color: Colors.white,
+            //   ),
+            //   menu: Text(
+            //     "Log System",
+            //     style: TextStyle(
+            //       fontSize: 17,
+            //       color: Colors.white,
+            //     ),
+            //   ),
+            // ),
             MenuBox(
               padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 15),
               icon: Icon(
@@ -132,6 +134,9 @@ class CustomDrawer extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
+              onTap: () {
+                Navigator.of(context).pushNamed(EditProfileUser.routeName);
+              },
             ),
             MenuBox(
               padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 15),
