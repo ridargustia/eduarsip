@@ -1,6 +1,5 @@
-import 'package:eduarsip/screens/laporan/laporanArsip.dart';
-import 'package:eduarsip/screens/laporan/laporanPengembalian.dart';
-
+import './screens/laporan/laporanArsip.dart';
+import './screens/laporan/laporanPengembalian.dart';
 import './screens/laporan/laporanPeminjaman.dart';
 import './screens/user/changePasswordUser.dart';
 import './screens/user/editProfileUser.dart';

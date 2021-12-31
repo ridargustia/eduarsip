@@ -285,6 +285,87 @@ class ListPeminjaman extends StatelessWidget {
                                     )
                                   ],
                                 ),
+                                SizedBox(height: bodyHeight * 0.02),
+                                Column(
+                                  // mainAxisSize: MainAxisSize.max,
+                                  // mainAxisAlignment:
+                                  //     MainAxisAlignment.spaceEvenly,
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
+                                      width: double.infinity,
+                                      height: bodyHeight * 0.08,
+                                      child: ElevatedButton(
+                                        style: ButtonStyle(
+                                          backgroundColor:
+                                              MaterialStateProperty.all(
+                                                  Colors.blue.shade400),
+                                        ),
+                                        onPressed: () {},
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            Icon(Icons.refresh),
+                                            Text("Kembalikan Arsip"),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: bodyHeight * 0.02,
+                                    ),
+                                    Container(
+                                      width: double.infinity,
+                                      height: bodyHeight * 0.08,
+                                      child: ElevatedButton(
+                                        style: ButtonStyle(
+                                          backgroundColor:
+                                              MaterialStateProperty.all(
+                                                  Colors.orange.shade600),
+                                        ),
+                                        onPressed: () {},
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            Icon(Icons.edit),
+                                            Text("Edit"),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      height: bodyHeight * 0.02,
+                                    ),
+                                    Container(
+                                      width: double.infinity,
+                                      height: bodyHeight * 0.08,
+                                      child: ElevatedButton(
+                                        style: ButtonStyle(
+                                          backgroundColor:
+                                              MaterialStateProperty.all(
+                                                  Colors.red),
+                                        ),
+                                        onPressed: () {},
+                                        child: Row(
+                                          mainAxisAlignment:
+                                              MainAxisAlignment.center,
+                                          crossAxisAlignment:
+                                              CrossAxisAlignment.center,
+                                          children: [
+                                            Icon(Icons.delete),
+                                            Text("Hapus"),
+                                          ],
+                                        ),
+                                      ),
+                                    )
+                                  ],
+                                ),
                               ],
                             ),
                           ),
