@@ -1,3 +1,5 @@
+import 'package:eduarsip/screens/laporan/laporanPengembalian.dart';
+
 import './laporanPeminjaman.dart';
 
 import '../../providers/BodyHeight.dart';
@@ -50,7 +52,10 @@ class SubMenuLaporan extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Laporan Pengembalian",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context)
+                      .pushNamed(LaporanPengembalian.routeName);
+                },
               ),
               SizedBox(
                 height: bodyHeight * 0.05,
