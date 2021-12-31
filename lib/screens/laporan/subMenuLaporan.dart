@@ -1,3 +1,4 @@
+import 'package:eduarsip/screens/laporan/laporanArsip.dart';
 import 'package:eduarsip/screens/laporan/laporanPengembalian.dart';
 
 import './laporanPeminjaman.dart';
@@ -62,7 +63,9 @@ class SubMenuLaporan extends StatelessWidget {
               ),
               ButtonSubMenu(
                 title: "Laporan Arsip",
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).pushNamed(LaporanArsip.routeName);
+                },
               ),
             ],
           ),

@@ -1,3 +1,4 @@
+import 'package:eduarsip/screens/laporan/laporanArsip.dart';
 import 'package:eduarsip/screens/laporan/laporanPengembalian.dart';
 
 import './screens/laporan/laporanPeminjaman.dart';
@@ -147,6 +148,7 @@ class MyApp extends StatelessWidget {
           ChangePasswordUser.routeName: (context) => ChangePasswordUser(),
           LaporanPeminjaman.routeName: (context) => LaporanPeminjaman(),
           LaporanPengembalian.routeName: (context) => LaporanPengembalian(),
+          LaporanArsip.routeName: (context) => LaporanArsip(),
         },
       ),
     );
